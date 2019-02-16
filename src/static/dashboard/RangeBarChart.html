@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+</head>
+<body>
+<div id="chartContainer" style="height: 300px; width: 80%;">
+
+
+</div>
+</body>
+
+<script>
+$( document ).ready(function() {
+    console.log( "ready!" );
+    var chart = new CanvasJS.Chart("chartContainer", {
+    	animationEnabled: true,
+    	title: {
+    		text: "Number of Days"
+    	},
+    	axisX: {
+    		title: ""
+    	},
+    	axisY: {
+    		includeZero: false,
+    		color : ["EA212D" , "#95242C" ],
+    		interval: 100	
+    	}, 
+    	data: [{
+    		type: "rangeBar",
+    		yValueFormatString: "#0",
+    		indexLabel: "{y[#index]}",
+    		legendText: "",
+    		toolTipContent: "<b>{label}</b>: {y[0]} to {y[1]}",
+    		
+    		
+    	 dataPoints: [
+    		            	{ x: 10,  y:[200, -250 ],  label: "Q4" },
+    		    			{ x: 20,  y:[270, -270], label: "Q3" },
+    		    			{ x: 30, y:[10, -10], label: "Q2" },
+    		    			{ x: 40, y:[90, -160], label: "Q1" }
+    		            ]
+    			
+    	}]
+    });
+
+    chart.render();
+
+});
+//window.onload = function ()
+//{
+
+
+
+//}
+
+</script>
+</html>

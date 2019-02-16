@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 44.59 44.59">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="1" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ea212d"/>
+      <stop offset="1" stop-color="#efb74e"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_3799" data-name="Group 3799" transform="translate(-19.11 -7.636)">
+    <g id="Icon" transform="translate(19.11 7.636)">
+      <rect id="Background" class="cls-1" width="44.59" height="44.59" rx="22.295"/>
+    </g>
+    <g id="Group_3634" data-name="Group 3634" transform="translate(30.042 21.405)">
+      <path id="Path_671" data-name="Path 671" class="cls-2" d="M21.57,0h-21A.569.569,0,0,0,0,.568V17.029a.569.569,0,0,0,.568.568h21a.569.569,0,0,0,.568-.568V.568A.569.569,0,0,0,21.57,0ZM21,16.461H1.135V1.135H21Z"/>
+      <path id="Path_672" data-name="Path 672" class="cls-2" d="M29.568,38.745a.569.569,0,0,0,.568-.568v-4.91a.568.568,0,0,0-1.135,0v4.91A.569.569,0,0,0,29.568,38.745Z" transform="translate(-20.77 -23.419)"/>
+      <path id="Path_673" data-name="Path 673" class="cls-2" d="M13.568,38.745a.569.569,0,0,0,.568-.568v-4.91a.568.568,0,0,0-1.135,0v4.91A.569.569,0,0,0,13.568,38.745Z" transform="translate(-9.31 -23.419)"/>
+      <path id="Path_674" data-name="Path 674" class="cls-2" d="M21.568,34.806a.569.569,0,0,0,.568-.568V27.768a.568.568,0,0,0-1.135,0v6.471A.569.569,0,0,0,21.568,34.806Z" transform="translate(-15.04 -19.48)"/>
+      <path id="Path_675" data-name="Path 675" class="cls-2" d="M45.568,34.806a.569.569,0,0,0,.568-.568V27.768a.568.568,0,0,0-1.135,0v6.471A.569.569,0,0,0,45.568,34.806Z" transform="translate(-32.229 -19.48)"/>
+      <path id="Path_676" data-name="Path 676" class="cls-2" d="M37.568,30.8a.569.569,0,0,0,.568-.568v-8.06a.568.568,0,1,0-1.135,0v8.06A.569.569,0,0,0,37.568,30.8Z" transform="translate(-26.499 -15.47)"/>
+      <path id="Path_677" data-name="Path 677" class="cls-2" d="M61.568,22.846a.569.569,0,0,0,.568-.568V11.068a.568.568,0,1,0-1.135,0v11.21A.569.569,0,0,0,61.568,22.846Z" transform="translate(-43.688 -7.52)"/>
+      <path id="Path_678" data-name="Path 678" class="cls-2" d="M53.568,26.785a.569.569,0,0,0,.568-.568v-9.65a.568.568,0,0,0-1.135,0v9.65A.569.569,0,0,0,53.568,26.785Z" transform="translate(-37.958 -11.459)"/>
+    </g>
+  </g>
+</svg>

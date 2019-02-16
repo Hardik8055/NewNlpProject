@@ -1,0 +1,135 @@
+{  
+   "customerdata":[  
+      {  
+         "usertype":[  
+            {  
+               "username":"John Hopkins",
+               "designation":"Finance Head"
+            },
+            {  
+               "username":"Antony Hopkins",
+               "designation":"Chief Accountant"
+            },
+            {  
+               "username":"Joe McCarthy",
+               "designation":"Joe McCarthy"
+            }
+         ],
+         "datetype":[  
+            {  
+               "dateheader":"Next Review Date",
+               "datevalue":"12 September 2018"
+            },
+            {  
+               "dateheader":"In Partnership From",
+               "datevalue":"05 September 2016-(24 months)"
+            }
+         ],
+         "ratingtype":[  
+            {  
+               "ratingheader":"BMO Rating : A"
+            },
+            {  
+               "ratingheader":"Fitch Ratings : B2"
+            }
+         ],
+         "services":{  
+            "serviceheader":"Active Services(12)"
+         },
+         "recenttype":[  
+            {  
+               "recentdata":"Matures on 10/10/18 Term Loan AA123456- $45000.00"
+            },
+            {  
+               "recentdata":"Net Interest Income - $70,000"
+            },
+            {  
+               "recentdata":"Cash Management Income- $20,000"
+            }
+         ],
+         "customerinfo":{  
+            "label":{  
+               "customheader":"Covenants Info (12)"
+            },
+            "covenantsinfo":[  
+               {  
+                  "image":"image001",
+                  "headertype":"MIN TNW",
+                  "headerdata":"Actuals(+1.00)",
+                  "ovalbutton":" Breached"
+               },
+               {  
+                  "image":"image002",
+                  "headertype":"Current Ratio",
+                  "headerdata":"Actuals(+1.26)",
+                  "ovalbutton":" Attention"
+               },
+               {  
+                  "image":"image003",
+                  "headertype":"Debt Service",
+                  "headerdata":"MIN TNW"
+               }
+            ],
+            "opplabel":[  
+               {  
+                  "customheader":"Opportunity (6)"
+               }
+            ],
+            "opportinfo":[  
+               {  
+                  "opporimage":"ic_payments_01.svg",
+                  "oppornumber":"234567890",
+                  "opporloantype":"Real Estate",
+                  "oppordate":"Submitted:01-08-18",
+                  "opporovalbutton":" CREDIT DECISION PENDING"
+               },
+               {  
+                  "opporimage":"ic_payments_01.svg",
+                  "oppornumber":"234567890",
+                  "opporloantype":"Floor Plan and Term Loan",
+                  "oppordate":"Submitted:01-08-18",
+                  "opporovalbutton":" CREDIT DECISION PENDING"
+               },
+               {  
+                  "opporimage":"ic_payments_01.svg",
+                  "oppornumber":"234567890",
+                  "opporloantype":"Term Loan Deal",
+                  "oppordate":"Submitted:01-08-18",
+                  "opporovalbutton":" CREDIT DECISION PENDING"
+               }
+            ],
+            "deplabel":[  
+               {  
+                  "customheader":"Deposits"
+               }
+            ],
+            "depositinfo":[  
+               {  
+                  "image":"ic_payments_02.svg",
+                  "number":"ACAP123456",
+                  "loantype":"Checking Account INB Branch",
+                  "date":"on 13-10-18",
+                  "amt":"Available $25000",
+                  "avg":"Average $20000"
+               },
+               {  
+                  "image":"ic_payments_02.svg",
+                  "number":"ACAP123456",
+                  "loantype":"Checking Account INB Branch",
+                  "date":"on 13-10-18",
+                  "amt":"Available $25000",
+                  "avg":"Average $20000"
+               },
+               {  
+                  "image":"ic_payments_02.svg",
+                  "number":"ACAP123456",
+                  "loantype":"Checking Account INB Branch",
+                  "date":"on 13-10-18",
+                  "amt":"Available $25000",
+                  "avg":"Average $20000"
+               }
+            ]
+         }
+      }
+   ]
+}

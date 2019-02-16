@@ -1,0 +1,148 @@
+/*IPHONE - 5 & 5S - Start*/
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) { /* STYLES GO HERE */}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) { /* STYLES GO HERE */}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) { /* STYLES GO HERE */ }
+
+/*IPHONE - 5 & 5S - End*/
+
+/*IPHONE - 6,7,8 Plus - Start*/
+
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px) { /* STYLES GO HERE */}
+
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : landscape) { /* STYLES GO HERE */}
+
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : portrait) { /* STYLES GO HERE */ }
+
+/*IPHONE - 6,7,8 Plus - End*/
+
+
+/*IPHONE - 6,7,8- Start*/
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+/* STYLES GO HERE */
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : landscape) {
+/* STYLES GO HERE */
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+ /* STYLES GO HERE */
+}
+/* IPHONE - 6,7,8-End*/
+
+/*IPHONE - X*/
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) {
+/* STYLES GO HERE */
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : landscape) {
+/* STYLES GO HERE */
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) {
+/* STYLES GO HERE */
+}
+
+
+/*IPAD - Latest*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  /* STYLES GO HERE */
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+
+/* STYLES GO HERE */
+
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+
+  /* STYLES GO HERE */
+}
+
+/*IPAD 1 & 2*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 1){ /* STYLES GO HERE */}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 1)  { /* STYLES GO HERE */}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 1) { /* STYLES GO HERE */ }
+
+/*IPAD 3 & 4*/
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) { /* STYLES GO HERE */ }
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 2) { /* STYLES GO HERE */}
+
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 2) {
+/* STYLES GO HERE */
+
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+$( document ).ready(function() {
+
+//window.onload = function ()
+//{
+
+var chart = new CanvasJS.Chart("chartContainer1",
+    {
+        animationEnabled: true,
+        title: {
+            text: "Revenue"
+        },
+        axisX: {
+            interval: 10,
+        },
+        data: [
+        {
+            type: "column",
+            color: "#EFB74E",
+            dataPoints: [
+                { x: 10, y: 125, label: "Q417" },
+                { x: 20, y: 90, label: "Q118" },
+                { x: 30, y: 60, label: "Q218" },
+                { x: 40, y: 175, label: "Q318" }
+               
+            ]
+        },
+        ]
+    });
+    
+chart.render();
+
+var chart = new CanvasJS.Chart("chartContainer2",
+	    {
+	        animationEnabled: true,
+	        title: {
+	            text: "Gross Profit"
+	        },
+	        axisX: {
+	            interval: 10,
+	        },
+	        data: [
+	        {
+	            type: "column",
+	            color: "#127ABF",
+	            dataPoints: [
+	            	 { x: 10, y: 90, label: "Q417" },
+	                 { x: 20, y: 40, label: "Q118" },
+	                 { x: 30, y: 50, label: "Q218" },
+	                 { x: 40, y: 125, label: "Q318" }
+	            ]
+	        },
+	        ]
+	    });
+	    
+	chart.render();
+	
+	var chart = new CanvasJS.Chart("chartContainer3",
+		    {
+		        animationEnabled: true,
+		        title: {
+		            text: "Operating Expense"
+		        },
+		        axisX: {
+		            interval: 10,
+		        },
+		        data: [
+		        {
+		            type: "column",
+		            color: "#A8A6A6",
+		            dataPoints: [
+		            	 { x: 10, y: 110, label: "Q417" },
+		                 { x: 20, y: 180, label: "Q118" },
+		                 { x: 30, y: 60, label: "Q218" },
+		                 { x: 40, y: 175, label: "Q318" }
+		            ]
+		        },
+		        ]
+		    });
+	
+		chart.render();
+		
+		var chart = new CanvasJS.Chart("chartContainer4",
+			    {
+			        animationEnabled: true,
+			        title: {
+			            text: "EPIDTA"
+			        },
+			        axisX: {
+			            interval: 10,
+			            barPercentage: 0.2
+			        },
+			        data: [
+			        {
+			            type: "column",
+			            color: "#12B2BF",
+			            dataPoints: [
+			            	 { x: 10, y: 65, label: "Q417" },
+			                 { x: 20, y: 10, label: "Q118" },
+			                 { x: 30, y: 40, label: "Q218" },
+			                 { x: 40, y: 100, label: "Q318" }
+			            ]
+			        },
+			        ]
+			    });
+		
+			chart.render();
+			
+			
+			var chart = new CanvasJS.Chart("chartContainer5",
+				    {
+				        animationEnabled: true,
+				        title: {
+				            text: "Net Income"
+				        },
+				        axisX: {
+				            interval: 10,
+				        },
+				        data: [
+				        {
+				        	
+				        	
+				        	type : "area",
+				            fillOpacity: .3, 
+				            type: "column",
+				            color: "#95242C",
+				            dataPoints: [
+				            	 { x: 10, y: 25, label: "Q417" },
+				                 { x: 20, y: 10, label: "Q118" },
+				                 { x: 30, y: 15, label: "Q218" },
+				                 { x: 40, y: 70, label: "Q318" }
+				            ]
+				        },
+				        ]
+				    });
+			
+				chart.render();
+				
+				var chart = new CanvasJS.Chart("chartContainer6",
+					    {
+					        animationEnabled: true,
+					        title: {
+					            text: "Other Income"
+					        },
+					        axisX: {
+					            interval: 10,
+					        },
+					        data: [
+					        {
+					            type: "column",
+					            color: "#269D1C",
+					            dataPoints: [
+					            	 { x: 10, y: 125, label: "Q417" },
+					                 { x: 20, y: 90, label: "Q118" },
+					                 { x: 30, y: 60, label: "Q218" },
+					                 { x: 40, y: 10, label: "Q318" }
+					            ]
+					        },
+					        ]
+					    });
+				
+					chart.render();
+				//	}
+});
+</script>
+
+
+</head>
+
+<body>
+<div id="chartContainer1" style="width: 30%; height: 300px;display: inline-block;"></div> 
+<div id="chartContainer2" style="width: 30%; height: 300px;display: inline-block;"></div>
+<div id="chartContainer3" style="width: 30%; height: 300px;display: inline-block;"></div>
+<div id="chartContainer4" style="width: 30%; height: 300px;display: inline-block;"></div>
+<div id="chartContainer5" style="width: 30%; height: 300px;display: inline-block;"></div>
+<div id="chartContainer6" style="width: 30%; height: 300px;display: inline-block;"></div>
+</body>
+</html>

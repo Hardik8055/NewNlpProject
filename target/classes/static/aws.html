@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- Template by html.am -->
+<html>
+	<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=11" />  
+	<meta http-equiv="X-UA-Compatible" content="IE=8" />
+	</head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+ 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Garage</title>
+	
+		<script type="text/css">
+	.switchdemoBasicUsage .inset {
+  padding-left: 25px;
+  padding-top: 25px; }</script>	
+	
+	
+	
+	<body ng-cloak=""  ng-app="myApp" ng-controller="custD as ctrl">		
+<div>
+<select ng-model="ent" ng-options="n.entity for n in data" style="width: 400px" ng-change="reset($index)"></select> 
+
+<table><tr><th>Select topic keyword to process</th>
+<th>Selected Keyword</th></tr>
+<tr><td>
+<select size="11" ng-model="told" ng-options="n for n in ent.topicList" style="width: 700px" ng-click="listold($index)"></select> </td>
+<td>
+<select size="11" ng-model="tnew" ng-options="n for n in ent.selectedTopic" style="width: 700px"ng-click="listnew($index)"></select> </td>
+<tr><td colspan="2"><div ng-click="process()" align="center">Submit</div></td></tr>
+
+<tr ng-repeat="res in article"><td colspan="2"><a href="{{res.url}}">{{res.url}}</a><br>{{res.content}}</td></tr>
+
+</table> 
+
+ 
+</div>
+
+	<script src="MyApp.js"></script>
+	</body>
+</html>

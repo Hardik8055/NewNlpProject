@@ -1,0 +1,9 @@
+<svg id="printserviceicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.316 24">
+  <path id="Path_4182" data-name="Path 4182" d="M49.911,19.422H60.222a.711.711,0,0,0,0-1.422H49.911a.711.711,0,1,0,0,1.422Z" transform="translate(-40.453 -14.8)"/>
+  <path id="Path_4183" data-name="Path 4183" d="M49.911,38.422H60.222a.711.711,0,0,0,0-1.422H49.911a.711.711,0,1,0,0,1.422Z" transform="translate(-40.453 -30.422)"/>
+  <path id="Path_4184" data-name="Path 4184" d="M49.911,57.422H60.222a.711.711,0,0,0,0-1.422H49.911a.711.711,0,1,0,0,1.422Z" transform="translate(-40.453 -46.044)"/>
+  <path id="Path_4185" data-name="Path 4185" d="M28.6,12.978H27.538V9.244a.713.713,0,0,0-.711-.711h-3.5V.711A.713.713,0,0,0,22.613,0h-16A.713.713,0,0,0,5.9.711V8.533H1.938a.713.713,0,0,0-.711.711v3.733H.711A.713.713,0,0,0,0,13.689v9.6A.713.713,0,0,0,.711,24H28.6a.713.713,0,0,0,.711-.711v-9.6A.713.713,0,0,0,28.6,12.978ZM26.116,9.956v3.022H23.324V9.956ZM7.324,1.422H21.9V12.978H7.324V1.422ZM2.649,9.956H5.9v3.022H2.649ZM27.893,22.578H1.422V14.4H27.893Z"/>
+  <circle id="Ellipse_2" data-name="Ellipse 2" cx="0.711" cy="0.711" r="0.711" transform="translate(17.778 16.178)"/>
+  <circle id="Ellipse_3" data-name="Ellipse 3" cx="0.711" cy="0.711" r="0.711" transform="translate(20.622 16.178)"/>
+  <circle id="Ellipse_4" data-name="Ellipse 4" cx="0.711" cy="0.711" r="0.711" transform="translate(23.467 16.178)"/>
+</svg>

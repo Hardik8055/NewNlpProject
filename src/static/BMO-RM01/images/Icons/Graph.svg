@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 99.807 99.808">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ecedef;
+        stroke: rgba(0,0,0,0);
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-4 {
+        fill: #1de9b6;
+      }
+
+      .cls-5 {
+        fill: #a389d4;
+      }
+
+      .cls-6 {
+        fill: #04a9f5;
+      }
+
+      .cls-7 {
+        fill: #393c40;
+        font-size: 10px;
+        font-family: OpenSans, Open Sans;
+      }
+
+      .cls-8, .cls-9 {
+        font-size: 8px;
+      }
+
+      .cls-9 {
+        fill: #efb74e;
+        font-family: OpenSans-Semibold, Open Sans;
+        font-weight: 600;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path id="Subtraction_1" data-name="Subtraction 1" class="cls-1" d="M49.9,99.808A49.917,49.917,0,0,1,30.479,3.922a49.917,49.917,0,0,1,38.85,91.965A49.591,49.591,0,0,1,49.9,99.808Zm0-94.263A44.371,44.371,0,0,0,32.637,90.777,44.371,44.371,0,0,0,67.17,9.031,44.081,44.081,0,0,0,49.9,5.545Z" transform="translate(0 0)"/>
+    </clipPath>
+    <clipPath id="clip-path-2"/>
+  </defs>
+  <g id="Graph" transform="translate(-45.001 -30.316)">
+    <g id="Chart" class="cls-2" transform="translate(45.001 30.316)">
+      <g id="Graph-2" data-name="Graph" class="cls-3" transform="translate(-16.635 -10.535)">
+        <path id="Path_21" data-name="Path 21" class="cls-4" d="M0,0V57.669L51.567,110.9,64.321,22.734Z" transform="translate(65.984)"/>
+        <path id="Path_22" data-name="Path 22" class="cls-5" d="M90.936,20.516l13.308,14.417L57.667,59.33,0,13.862,33.824,0,65.43,28.833Z" transform="translate(1.663 70.974)"/>
+        <path id="Path_23" data-name="Path 23" class="cls-6" d="M62.1,0V14.981L26.061,66.539,5.545,75.41,0,28.279,51.013,1.109Z" transform="translate(0 3.327)"/>
+      </g>
+    </g>
+    <text id="Food_Drink" data-name="Food &amp; Drink" class="cls-7" transform="translate(95 68.076)"><tspan x="-32.595" y="0">Total Revenue</tspan><tspan class="cls-8" y="0"></tspan><tspan x="-21.238" y="17">$120,000</tspan><tspan class="cls-9"><tspan x="-30.461" y="34">(As on 13-10-18)</tspan></tspan></text>
+  </g>
+</svg>

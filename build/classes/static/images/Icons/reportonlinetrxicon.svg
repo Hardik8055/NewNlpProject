@@ -1,0 +1,19 @@
+<svg id="reportonlinetrxicon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 37.5 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a389d4"/>
+      <stop offset="1" stop-color="#899ed4"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_4189" data-name="Path 4189" class="cls-1" d="M50.921,10.493v-.033a.3.3,0,0,0-.033-.164h0c0-.066-.033-.1-.033-.164V10.1c-.033-.066-.033-.1-.066-.164h0a.454.454,0,0,0-.1-.132.032.032,0,0,0-.033-.033c-.033-.033-.066-.1-.1-.132h0L41.349.428h0c-.033-.033-.1-.066-.132-.1A.032.032,0,0,1,41.184.3c-.033-.033-.1-.066-.132-.1h0c-.033-.033-.1-.033-.164-.066h-.033A.3.3,0,0,0,40.691.1h0a.256.256,0,0,0-.2-.1H21.316A1.32,1.32,0,0,0,20,1.316V42.105a1.32,1.32,0,0,0,1.316,1.316H49.605a1.32,1.32,0,0,0,1.316-1.316V10.493ZM41.711,4.507l4.7,4.7h-4.7ZM22.632,40.789V2.632H39.079v7.895a1.32,1.32,0,0,0,1.316,1.316h7.895V40.789Z" transform="translate(-13.421)"/>
+  <path id="Path_4190" data-name="Path 4190" class="cls-1" d="M55.079,48H37.316a1.316,1.316,0,0,0,0,2.632H55.079a1.316,1.316,0,1,0,0-2.632Z" transform="translate(-24.158 -32.211)"/>
+  <path id="Path_4191" data-name="Path 4191" class="cls-1" d="M55.079,64H37.316a1.316,1.316,0,0,0,0,2.632H55.079a1.316,1.316,0,1,0,0-2.632Z" transform="translate(-24.158 -42.947)"/>
+  <path id="Path_4192" data-name="Path 4192" class="cls-1" d="M55.079,80H37.316a1.316,1.316,0,0,0,0,2.632H55.079a1.316,1.316,0,0,0,0-2.632Z" transform="translate(-24.158 -53.684)"/>
+  <path id="Path_4193" data-name="Path 4193" class="cls-1" d="M45.408,96H37.316a1.316,1.316,0,0,0,0,2.632h8.092a1.316,1.316,0,1,0,0-2.632Z" transform="translate(-24.158 -64.421)"/>
+  <path id="Path_4194" data-name="Path 4194" class="cls-1" d="M30.921,58.105H2.632V17.316a1.316,1.316,0,0,0-2.632,0V59.421a1.32,1.32,0,0,0,1.316,1.316H30.921a1.316,1.316,0,1,0,0-2.632Z" transform="translate(0 -10.737)"/>
+</svg>

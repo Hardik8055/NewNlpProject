@@ -1,0 +1,22 @@
+
+{  
+   "totalResults":2,
+   "impacts":[  
+      {  
+         "office": "Hesser",
+		 "brand":"Toyota",
+		 "model":"Prius",
+		 "from":"2012",
+		 "to":"2017",
+		 "count":"999"
+      },
+      {  
+         "office": "Naperville",
+		 "brand":"Ford",
+		 "model":"Mustang",
+		 "from":"2011",
+		 "to":"2012",
+		 "count":"500"
+   }
+   ]
+}

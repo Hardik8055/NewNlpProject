@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+<style>
+body {
+	margin: auto;
+	width: 960px;
+}
+
+text {
+	font: 10px sans-serif;
+}
+
+.axis path {
+	fill: none;
+	stroke: #000;
+	shape-rendering: geometricPrecision;
+}
+
+.x.axis path {
+	display: none;
+}
+
+.newarea {
+	fill: url(#areaGradient);
+	stroke-width: 02px;
+	stroke: #127ABF;
+}
+
+.oldarea {
+	fill: url(#oldGradient);
+	stroke-width: 02px;
+	stroke: #EA212D;
+}
+</style>
+<body>
+	<script src="http://d3js.org/d3.v3.js"></script>
+	<script>
+	
+		var margin = {
+			top : 20,
+			right : 20,
+			bottom : 30,
+			left : 50
+		}, width = 960 - margin.left - margin.right, height = 500 - margin.top
+				- margin.bottom;
+
+		var parseDate = d3.time.format("%Y%m%d").parse;
+
+		var x = d3.time.scale().range([ 0, width ]);
+
+		var y = d3.scale.linear().range([ height-100, 0 ]);
+
+		var xAxis = d3.svg.axis().scale(x).orient("bottom");
+
+		var yAxis = d3.svg.axis().scale(y).orient("left");
+		
+		var oldarea = d3.svg.area().x(function(d) {
+			return x(d.date);
+		}).y0(height).y1(function(d) {
+			return y(d.temperature);
+		}).interpolate("basis");
+
+		var newarea = d3.svg.area().x(function(d) {
+			return x(d.date);
+		}).y0(height).y1(function(d) {
+			return y(d.new);
+		}).interpolate("basis");
+		
+		
+		var svg = d3.select("body").append("svg").attr("width",
+				width + margin.left + margin.right).attr("height",
+				height + margin.top + margin.bottom).append("g").attr(
+				"transform",
+				"translate(" + margin.left + "," + margin.top + ")");
+		
+
+		d3.csv("/rmenable/dataformat.csv", function(error, data) {
+			data.forEach(function(d) {
+				d.date = parseDate(d.date);
+				d.temperature = +d.temperature;
+				d.new = +d.new;
+			});
+
+			x.domain([ data[0].date, data[data.length - 1].date ]);
+			//y.domain(d3.extent(data, function(d) {
+			//	return d.temperature;
+			//}));
+			
+			y.domain(d3.extent(
+					[].concat(data.map(function (item) {
+				        return (item.temperature);
+				    }), data.map(function (item) {
+				        return (item.new);
+				    }))));
+				   
+
+			var areaGradient = svg.append("linearGradient").attr("id",
+					"areaGradient").attr("gradientUnits", "userSpaceOnUse")
+					.attr("x1", "0%").attr("y1", "0%").attr("x2", "0%").attr("y2","100%")
+
+			areaGradient.append("stop").attr("offset", "0%").attr("stop-color",
+					"#127ABF").attr("stop-opacity", 0.6);
+			areaGradient.append("stop").attr("offset", "80%").attr(
+					"stop-color", "white").attr("stop-opacity", 0);
+			
+			
+			
+			var oldGradient = svg.append("linearGradient").attr("id",
+			"oldGradient").attr("gradientUnits", "userSpaceOnUse")
+			.attr("x1", "0%").attr("y1", "0%").attr("x2", "0%").attr("y2","100%")
+
+			oldGradient.append("stop").attr("offset", "0%").attr("stop-color",
+				"#EA212D").attr("stop-opacity", 0.6);
+			oldGradient.append("stop").attr("offset", "80%").attr(
+				"stop-color", "white").attr("stop-opacity", 0);
+			
+
+			svg.append("g").attr("class", "x axis").attr("transform",
+					"translate(0," + height + ")").call(xAxis);
+
+			svg.append("g").attr("class", "y axis").call(yAxis).append("text")
+					.attr("transform", "rotate(-90)").attr("y", 6).attr("dy",
+							".71em").style("text-anchor", "end").text(
+							"Cars Sold");
+			
+			
+			svg.append("path").datum(data).attr("class", "oldarea")
+					.attr("d", oldarea);
+			
+			svg.append("path").datum(data).attr("class", "newarea")
+				.attr("d", newarea);
+			
+		});
+	</script>
+</body>

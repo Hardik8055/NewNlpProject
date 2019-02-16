@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Line Chart Test</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+
+  <script lang ="JavaScript">
+  
+// window.onload = function ()
+//{
+  $( document ).ready(function() {
+var ctx = document.getElementById("myChart").getContext("2d");
+
+var data = {
+    labels: ["Q4-17", "Q1-18", "Q2-18" , "Q3-18" , "Q4-17", "Q1-18", "Q2-18" , "Q3-18" ],
+    datasets: [
+        {
+            label: "ABINC",
+            backgroundColor: "#127ABF",
+            data: [70.27,10,40,60,15,140,50,70]
+        },
+        {
+            label: "Peer2",
+            backgroundColor: "#EFB74E",
+            data: [128.22,83.6,60,175,125,75,25,100]
+        },
+        {
+            label: "Peer3",
+            backgroundColor: "#269D1C",
+            data: [40,60,5,30,65,45,10,50]
+        }
+    ]
+};
+
+var myBarChart = new Chart(ctx, {
+    type: 'bar',
+    data: data,
+    options: {
+    	
+    	legend: {
+            position: 'bottom' // place legend on the right side of chart
+         },
+         
+        barValueSpacing: 20,
+        scales: {
+            yAxes: [{
+                ticks: {
+                    min: 0,
+                }
+            }]
+        }
+    }
+});
+
+//}
+  });
+ </script>
+
+</head>
+<body>
+<h1>Car Sales - Peers comparison</h1>
+<canvas id="myChart" width="10%"></canvas>
+
+</body>
+</html>

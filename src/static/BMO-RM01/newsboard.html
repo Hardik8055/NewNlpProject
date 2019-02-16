@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=768">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/tkb7dsq.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="css/mdb.min.css" rel="stylesheet">
+  <link href="css/newsboard.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<title>Relationship Manager's - Dashboard</title>
+	<script type="text/javascript" src="js/newsloader.js"></script>
+	<script type="text/javascript" src="js/jquery.slim.min.js"></script>
+	<script type="text/javascript" src="js/jquery-min.js"></script>
+	<script type="text/javascript" src="js/jquery.focuspoint.js"></script>
+	<script type="text/javascript" src="json/Entity_topic.json"></script>
+</head>
+
+<body onload="load()">
+  <nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand title-brand" href="#">News - Board</a>
+  </nav>
+	<div class="row my-3">
+		<div class="col-4 ml-4 pb-5" style="padding-right:20px; border-right: 1px solid #ccc;">
+			<p class="select-entity-title mt-4">Select Entity</p>
+			<p class="font-weight-light mb-0">
+				<select class="form-control minimal" id="populateScale" onchange=selectTopic()>
+					<option value="Select">Select Value</option>
+				</select>
+			</p>
+		</div>
+		<div class="col-4 pb-5" style="padding-right:20px; border-right: 1px solid #ccc;">
+			<p class="select-topic-title mt-4">Select Topic</p>
+			<p class="font-weight-light mb-0">
+				<select class="form-control minimal" id="populateTopic" onchange="displayNews()">
+					<option value="Select">Select Value</option>
+				</select>
+			</p>
+		</div>
+	</div>
+	<div class="row w-100 ml-0">
+		<div class="col-6 pl-4" id="industry">
+			<div class="row w-100">
+				<p class="news-title mt-2 pl-3">Industry - News</p>
+			</div>
+		</div>
+		<div class="col-6" id="entity">
+			<div class="row w-100">
+				<p class="news-title mt-2 pl-3" id="entity-title">Entity - News</p>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

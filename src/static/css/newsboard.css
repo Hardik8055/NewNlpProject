@@ -1,0 +1,207 @@
+html{
+  height: 100%;
+}
+body{
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  height: 100%;
+}
+.title-brand{
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+}
+.select-topic-title, .select-entity-title {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  color: #222328;
+}
+.news-title{
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  color: #CB0075;
+}
+.article-title{
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  color: #222328;
+}
+.loading {
+  width: 150px;
+  height: 150px;
+      background: transparent url('http://thinkfuture.com/wp-content/uploads/2013/10/loading_spinner.gif') center no-repeat;
+    }
+
+.feedback-button-like{
+  color: #222328
+}
+
+.feedback-button-like:hover{
+  color: #10E289
+}
+
+.feedback-button-dislike{
+  color: #222328
+}
+
+.feedback-button-dislike:hover{
+  color: #CB0075;
+}
+
+select {
+
+  /* styling */
+  background-color: transparent;
+  border: thin solid #00272B;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  height: 50px !important;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  text-align-last: center;
+  line-height: 1.5em;
+  padding-bottom: 0.5em !important;
+  padding-top: 0.5em !important;
+  padding: 0.5em 3.5em 0.5em 1em;
+
+  /* reset */
+
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select.minimal {
+  background-image:
+    linear-gradient(45deg, transparent 50%, #CB0075 50%),
+    linear-gradient(135deg, #CB0075 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+/*Bootstrap Buttons customised*/
+
+.btn-default-new {
+  font-size: 13px;
+  color:#3A405B;
+  letter-spacing: 1px;
+  line-height: 15px;
+  padding: 10px;
+  border: 2px solid #3A405B;
+  border-radius: 40px;
+  background: transparent;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-default-new:hover {
+  color: #FFF;
+  background: #CB0075;
+  border: 2px solid #FFF;
+}
+
+.btn-primary {
+  font-size: 13px;
+  color: rgba(58, 133, 191, 0.75);
+  letter-spacing: 1px;
+  line-height: 15px;
+  border: 2px solid rgba(58, 133, 191, 0.75);
+  border-radius: 40px;
+  background: transparent;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-primary:hover {
+  color: #FFF;
+  background: rgba(58, 133, 191, 0.75);
+  border: 2px solid rgba(58, 133, 191, 0.75);
+}
+
+.btn-success {
+  font-size: 13px;
+  color: rgba(103, 192, 103, 0.75);
+  letter-spacing: 1px;
+  line-height: 15px;
+  border: 2px solid rgba(103, 192, 103, 0.75);
+  border-radius: 40px;
+  background: transparent;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-success:hover {
+  color: #FFF;
+  background: rgb(103, 192, 103, 0.75);
+  border: 2px solid rgb(103, 192, 103, 0.75);
+}
+
+.btn-info {
+  font-size: 13px;
+  color: rgba(91, 192, 222, 0.75);
+  letter-spacing: 1px;
+  line-height: 15px;
+  border: 2px solid rgba(91, 192, 222, 0.75);
+  border-radius: 40px;
+  background: transparent;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-info:hover {
+  color: #FFF;
+  background: rgba(91, 192, 222, 0.75);
+  border: 2px solid rgba(91, 192, 222, 0.75);
+}
+
+.btn-warning {
+  font-size: 13px;
+  color: rgba(240, 173, 78, 0.75);
+  letter-spacing: 1px;
+  line-height: 15px;
+  border: 2px solid rgba(240, 173, 78, 0.75);
+  border-radius: 40px;
+  background: transparent;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-warning:hover {
+  color: #FFF;
+  background: rgb(240, 173, 78, 0.75);
+  border: 2px solid rgba(240, 173, 78, 0.75);
+}
+
+.btn-danger {
+  font-size: 13px;
+  color: rgba(217, 83, 78, 0.75);
+  letter-spacing: 1px;
+  line-height: 15px;
+  border: 2px solid rgba(217, 83, 78, 0.75);
+  border-radius: 40px;
+  background: transparent;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-danger:hover {
+  color: #FFF;
+  background: rgba(217, 83, 78, 0.75);
+  border: 2px solid rgba(217, 83, 78, 0.75);
+}

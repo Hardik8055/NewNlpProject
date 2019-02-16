@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40.342 11.146">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.9;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        fill: #fff;
+        font-size: 6px;
+        font-family: OpenSans-Semibold, Open Sans;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="1" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ea212d"/>
+      <stop offset="1" stop-color="#efb74e"/>
+    </linearGradient>
+  </defs>
+  <g id="Reject" class="cls-1" transform="translate(0 0)">
+    <rect id="Rectangle_14" data-name="Rectangle 14" class="cls-2" width="40.342" height="11.146" rx="5.573"/>
+    <text id="REJECT-2" data-name="REJECT" class="cls-3" transform="translate(3.251 1.618)"><tspan x="1.505" y="6">Attention</tspan></text>
+  </g>
+</svg>

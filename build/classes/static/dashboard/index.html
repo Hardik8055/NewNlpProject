@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html  lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=768">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+      <link rel="stylesheet" href="/rmenable/css/bootstrap.min.css">
+      
+      <link href="/rmenable/css/mdb.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="/rmenable/css/base.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      <title>Relationship Manager's - Dashboard</title>
+      
+      <script>
+   var customerdata =
+	   [  
+    	      {  
+    	         "usertype":[  
+    	            {  
+    	               "username":"John Hopkins",
+    	               "designation":"Finance Head"
+    	            },
+    	            {  
+    	               "username":"Antony Hopkins",
+    	               "designation":"Chief Accountant"
+    	            },
+    	            {  
+    	               "username":"Joe McCarthy",
+    	               "designation":"Joe McCarthy"
+    	            }
+    	         ],
+    	         "datetype":[  
+    	            {  
+    	               "dateheader":"Next Review Date",
+    	               "datevalue":"12 September 2018"
+    	            },
+    	            {  
+    	               "dateheader":"In Partnership From",
+    	               "datevalue":"05 September 2016-(24 months)"
+    	            }
+    	         ],
+    	         "ratingtype":[  
+    	            {  
+    	               "ratingheader":"BMO Rating : A"
+    	            },
+    	            {  
+    	               "ratingheader":"Fitch Ratings : B2"
+    	            }
+    	         ],
+    	         "services":{  
+    	            "serviceheader":"Active Services(12)"
+    	         },
+    	         "recenttype":[  
+    	            {  
+    	               "recentdata":"Matures on 10/10/18 Term Loan AA123456- $45000.00"
+    	            },
+    	            {  
+    	               "recentdata":"Net Interest Income - $70,000"
+    	            },
+    	            {  
+    	               "recentdata":"Cash Management Income- $20,000"
+    	            }
+    	         ],
+    	         "customerinfo":{  
+    	            "label":{  
+    	               "customheader":"Covenants Info (12)"
+    	            },
+    	            "covenantsinfo":[  
+    	               {  
+    	                  "image":"image001",
+    	                  "headertype":"MIN TNW",
+    	                  "headerdata":"Actuals(+1.00)",
+    	                  "ovalbutton":" Breached"
+    	               },
+    	               {  
+    	                  "image":"image002",
+    	                  "headertype":"Current Ratio",
+    	                  "headerdata":"Actuals(+1.26)",
+    	                  "ovalbutton":" Attention"
+    	               },
+    	               {  
+    	                  "image":"image003",
+    	                  "headertype":"Debt Service",
+    	                  "headerdata":"MIN TNW"
+    	               }
+    	            ],
+    	            "opplabel":[  
+    	               {  
+    	                  "customheader":"Opportunity (6)"
+    	               }
+    	            ],
+    	            "opportinfo":[  
+    	               {  
+    	                  "opporimage":"ic_payments_01.svg",
+    	                  "oppornumber":"234567890",
+    	                  "opporloantype":"Real Estate",
+    	                  "oppordate":"Submitted:01-08-18",
+    	                  "opporovalbutton":" CREDIT DECISION PENDING"
+    	               },
+    	               {  
+    	                  "opporimage":"ic_payments_01.svg",
+    	                  "oppornumber":"234567890",
+    	                  "opporloantype":"Floor Plan and Term Loan",
+    	                  "oppordate":"Submitted:01-08-18",
+    	                  "opporovalbutton":" CREDIT DECISION PENDING"
+    	               },
+    	               {  
+    	                  "opporimage":"ic_payments_01.svg",
+    	                  "oppornumber":"234567890",
+    	                  "opporloantype":"Term Loan Deal",
+    	                  "oppordate":"Submitted:01-08-18",
+    	                  "opporovalbutton":" CREDIT DECISION PENDING"
+    	               }
+    	            ],
+    	            "deplabel":[  
+    	               {  
+    	                  "customheader":"Deposits"
+    	               }
+    	            ],
+    	            "depositinfo":[  
+    	               {  
+    	                  "image":"ic_payments_02.svg",
+    	                  "number":"ACAP123456",
+    	                  "loantype":"Checking Account INB Branch",
+    	                  "date":"on 13-10-18",
+    	                  "amt":"Available $25000",
+    	                  "avg":"Average $20000"
+    	               },
+    	               {  
+    	                  "image":"ic_payments_02.svg",
+    	                  "number":"ACAP123456",
+    	                  "loantype":"Checking Account INB Branch",
+    	                  "date":"on 13-10-18",
+    	                  "amt":"Available $25000",
+    	                  "avg":"Average $20000"
+    	               },
+    	               {  
+    	                  "image":"ic_payments_02.svg",
+    	                  "number":"ACAP123456",
+    	                  "loantype":"Checking Account INB Branch",
+    	                  "date":"on 13-10-18",
+    	                  "amt":"Available $25000",
+    	                  "avg":"Average $20000"
+    	               }
+    	            ]
+    	         }
+    	      }
+    	   ]
+    	
+      </script>
+     
+   </head>
+   <body  ng-app="app" class="main-body"  ng-controller="dashboardCtrl">
+      <nav class="navbar header-top fixed-top navbar-expand-lg  navbar-light bg-white">
+         <span class="navbar-toggler-icon leftmenutrigger">   <img src="/rmenable/images/icons/menuicon.svg" alt="menu" height="16"> </span>
+         <a class="navbar-brand ml-2  " href="index.html">
+         ABC Corporation</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon secondary-icon"> <img src="/rmenable/images/icons/menuicon.svg" alt="menu" height="16"> </span>
+         </button>
+      </nav>
+      <div id="empty" class="container-fluid">
+      </div>
+      <div id="customerProfile" class="px-3">
+         <div class="row profile-master m-0">
+            <div class="col-5 align-self-center">
+               <div class="row mt-2 mb-4">
+                  <div class="col-4 text-center">
+                     <div class="row justify-content-center">
+                        <a class="none" href="#" role="button"><img src="/rmenable/images/icons/men1.svg" class="report-icon-image" alt="My Requests" height="43px"></a>
+                     </div>
+                     <div class="row justify-content-center">
+                        <p class="font-small-regular mb-0">John Hopkins</p>
+                        <p class="font-xtra-small-light mb-0">Finance Head</p>
+                     </div>
+                  </div>
+                  <div class="col-4 text-center">
+                     <div class="row justify-content-center">
+                        <a class="none" href="#" role="button"><img src="/rmenable/images/icons/men2.svg" class="report-icon-image" alt="My Requests" height="43px"></a>
+                     </div>
+                     <div class="row justify-content-center">
+                        <p class="font-small-regular mb-0">John Hopkins</p>
+                        <p class="font-xtra-small-light mb-0">Finance Head</p>
+                     </div>
+                  </div>
+                  <div class="col-4 text-center">
+                     <div class="row justify-content-center">
+                        <a class="none" href="#" role="button"><img src="/rmenable/images/icons/men3.svg" class="report-icon-image" alt="My Requests" height="43px"></a>
+                     </div>
+                     <div class="row justify-content-center">
+                        <p class="font-small-regular mb-0">John Hopkins</p>
+                        <p class="font-xtra-small-light mb-0">Finance Head</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-12">
+                     <div class="row mb-2">
+                        <div class="col-7 my-auto">
+                           <p class="title-highlight-color font-medium-regular mb-0">Next Review Date</p>
+                           <p class="font-small-regular mb-0">12 September 2019</p>
+                        </div>
+                        <div class="col-5 my-auto">
+                           <p class="title-highlight-color font-medium-regular mb-0">Risk Rating</p>
+                           <p class="font-small-regular mb-0">12 September 2019</p>
+                        </div>
+                     </div>
+                     <div class="row mb-2">
+                        <div class="col-7 my-auto">
+                           <p class="title-highlight-color font-medium-regular mb-0">In Partnership From</p>
+                           <p class="font-small-regular mb-0">05 September 2016-(24Months)</p>
+                        </div>
+                        <div class="col-5 align-baseline">
+                           <p class="title-highlight-color font-medium-regular mb-0">Active Service<u>(12)</u></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-3 px-0">
+               <div class="row">
+                  <div class="col-12 mb-1 mt-2 text-center">
+                     <img src="/rmenable/images/icons/Graph.png" alt="revenuegraph" srcset="/rmenable/images/icons/Graph@2x.png 2x">
+                  </div>
+               </div>
+               <div class="row mr-0">
+                  <div class="col-12 align-items-center pr-0">
+                     <div class="row">
+                        <div class="col-2">
+                           <img src="/rmenable/images/icons/bluecircle.svg" class="report-icon-image" alt="My Requests" height="15">
+                        </div>
+                        <div class="col-10 d-flex align-items-center pl-1">
+                           <p class="font-small-regular mb-0">Other Fees - $30,000</p>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-2">
+                           <img src="/rmenable/images/icons/greencircle.svg" class="report-icon-image" alt="My Requests" height="15">
+                        </div>
+                        <div class="col-10 d-flex align-items-center pl-1">
+                           <p class="font-small-regular mb-0">Net Interest Revenue - $70,000</p>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-2">
+                           <img src="/rmenable/images/icons/purplecircle.svg" class="report-icon-image" alt="My Requests" height="15">
+                        </div>
+                        <div class="col-10 d-flex align-items-center pl-1">
+                           <p class="font-small-regular mb-0">Cash Management Income - $20,000</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-4 align-self-center px-0">
+               <div class="row">
+                  <p class="font-medium-regular title-highlight-color mb-0">Recent/Upcoming Events</p>
+               </div>
+               <div class="row cards-row">
+                  <div class="card m-1">
+                     <div class="card-body p-0">
+                        <div class="container">
+                           <div class="row my-2">
+                              <div class="col-1 align-self-center">
+                                 <img src="/rmenable/images/icons/ic_payments.svg" class="report-icon-image" alt="My Requests" height="24px">
+                              </div>
+                              <div class="col-8 pr-0 align-self-center">
+                                 <p class="font-medium-regular mb-0">Matures on 10/12/19</p>
+                                 <p class="font-xtra-small-light mb-0">Term Loan - AA123456 -$45000.00</p>
+                              </div>
+                              <div class="col-1 align-self-center">
+                                 <img src="/rmenable/images/icons/icons-dark-next.svg" class="report-icon-image" alt="My Requests" height="14px">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card m-1">
+                     <div class="card-body p-0">
+                        <div class="container">
+                           <div class="row my-2">
+                              <div class="col-1 align-self-center">
+                                 <img src="/rmenable/images/icons/ic_payments.svg" class="report-icon-image" alt="My Requests" height="24px">
+                              </div>
+                              <div class="col-8 pr-0 align-self-center">
+                                 <p class="font-medium-regular mb-0">Matures on 10/12/19</p>
+                                 <p class="font-xtra-small-light mb-0">Term Loan - AA123456 -$45000.00</p>
+                              </div>
+                              <div class="col-1 align-self-center">
+                                 <img src="/rmenable/images/icons/icons-dark-next.svg" class="report-icon-image" alt="My Requests" height="14px">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card m-1">
+                     <div class="card-body p-0">
+                        <div class="container">
+                           <div class="row my-2">
+                              <div class="col-1 align-self-center">
+                                 <img src="/rmenable/images/icons/ic_payments.svg" class="report-icon-image" alt="My Requests" height="24px">
+                              </div>
+                              <div class="col-8 pr-0 align-self-center">
+                                 <p class="font-medium-regular mb-0">Matures on 10/12/19</p>
+                                 <p class="font-xtra-small-light mb-0">Term Loan - AA123456 -$45000.00</p>
+                              </div>
+                              <div class="col-1 align-self-center">
+                                 <img src="/rmenable/images/icons/icons-dark-next.svg" class="report-icon-image" alt="My Requests" height="14px">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card m-1">
+                     <div class="card-body p-0">
+                        <div class="container">
+                           <div class="row my-2">
+                              <div class="col-1 align-self-center">
+                                 <img src="/rmenable/images/icons/ic_payments.svg" class="report-icon-image" alt="My Requests" height="24px">
+                              </div>
+                              <div class="col-8 pr-0 align-self-center">
+                                 <p class="font-medium-regular mb-0">Matures on 10/12/19</p>
+                                 <p class="font-xtra-small-light mb-0">Term Loan - AA123456 -$45000.00</p>
+                              </div>
+                              <div class="col-1 align-self-center">
+                                 <img src="/rmenable/images/icons/icons-dark-next.svg" class="report-icon-image" alt="My Requests" height="14px">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card m-1">
+                     <div class="card-body p-0">
+                        <div class="container">
+                           <div class="row my-2">
+                              <div class="col-1 align-self-center">
+                                 <img src="/rmenable/images/icons/ic_payments.svg" class="report-icon-image" alt="My Requests" height="24px">
+                              </div>
+                              <div class="col-8 pr-0 align-self-center">
+                                 <p class="font-medium-regular mb-0">Matures on 10/12/19</p>
+                                 <p class="font-xtra-small-light mb-0">Term Loan - AA123456 -$45000.00</p>
+                              </div>
+                              <div class="col-1 align-self-center">
+                                 <img src="/rmenable/images/icons/icons-dark-next.svg" class="report-icon-image" alt="My Requests" height="14px">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <div class="row m-0">
+         <div class="col-12 py-1 px-0">
+            <div class="accordion md-accordion accordion-2" id="accordionEx1" role="tablist" aria-multiselectable="true">
+               <!-- Accordion card -->
+               <div class="card">
+                  <!-- Card header -->
+                  <div class="card-header border-0 bg-color-light-grey mb-0" role="tab" id="heading1">
+                     <a data-toggle="collapse" data-parent="#accordionEx7" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                        <h5 class="mb-0 title-highlight-color ">
+                           Activites<i class="pl-2 fa fa-angle-down rotate-icon pull-right"></i>
+                        </h5>
+                     </a>
+                  </div>
+                  <!-- Card body -->
+                  <div id="collapse1" class="collapse show" role="tabpanel" aria-labelledby="heading1" data-parent="#accordionEx7">
+                     <div class="card-body h-100 mb-0 py-0 bg-color-light-grey">
+                        <div class="row">
+                          <div class="col-3 h-100 pr-0">
+                            <div class="row">
+                               <p class="font-medium-regular title-highlight-color ml-2 mb-0">Covenants<u>(12)</u></p>
+                            </div>
+                            <div class="row h-100 cards-row">
+                               <div class="card covenant-card mx-1 mt-1 mb-2">
+                                  <div class="card-body covenant-card-body p-1">
+                                     <div class="container covenant-container">
+                                       <div class="row h-100">
+                                         <div class="col-4 align-self-center">
+                                           <img src="/rmenable/images/icons/min-tnw.svg" class="report-icon-image" alt="My Requests" height="44px">
+                                         </div>
+                                         <div class="col-8 align-self-center">
+                                           <div class="row text-right covenant-info-hide">
+                                             <div class="col-12">
+                                               <img src="/rmenable/images/icons/attention.svg" class="report-icon-image" alt="My Requests" height="11px">
+                                             </div>
+                                           </div>
+                                           <div class="row">
+                                             <div class="col-12 pr-0">
+                                               <p class="font-large-light text-uppercase mb-0">MIN TNW</p>
+                                               <p class="font-xtra-small-light font-color-light-grey mb-0">Actuals<span class="covenant-value-positive">(+160)</span></p>
+                                             </div>
+                                           </div>
+                                         </div>
+                                       </div>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="card covenant-card mx-1 mt-1 mb-2">
+                                  <div class="card-body covenant-card-body p-1">
+                                     <div class="container covenant-container">
+                                       <div class="row h-100">
+                                         <div class="col-4 align-self-center">
+                                           <img src="/rmenable/images/icons/ratio.svg" class="report-icon-image" alt="My Requests" height="44px">
+                                         </div>
+                                         <div class="col-8 align-self-center">
+                                           <div class="row text-right">
+                                             <div class="col-12">
+                                               <img src="/rmenable/images/icons/breachead.svg" class="report-icon-image" alt="My Requests" height="11px">
+                                             </div>
+                                           </div>
+                                           <div class="row mb-2">
+                                             <div class="col-12 pr-0">
+                                               <p class="font-large-light mb-0">Current Ratio</p>
+                                               <p class="font-xtra-small-light font-color-light-grey mb-0">Actuals<span class="covenant-value-danger">(+1.00)</span></p>
+                                             </div>
+                                           </div>
+                                         </div>
+                                       </div>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="card covenant-card mx-1 mt-1 mb-2">
+                                  <div class="card-body covenant-card-body p-1">
+                                     <div class="container covenant-container">
+                                       <div class="row h-100">
+                                         <div class="col-4 align-self-center">
+                                           <img src="/rmenable/images/icons/debt.svg" class="report-icon-image" alt="My Requests" height="44px">
+                                         </div>
+                                         <div class="col-8 align-self-center">
+                                           <div class="row text-right">
+                                             <div class="col-12">
+                                               <img src="/rmenable/images/icons/attention.svg" class="report-icon-image" alt="My Requests" height="11px">
+                                             </div>
+                                           </div>
+                                           <div class="row mb-2">
+                                             <div class="col-12 pr-0">
+                                               <p class="font-large-light mb-0">Debt Service</p>
+                                               <p class="font-xtra-small-light font-color-light-grey mb-0">Actuals<span class="covenant-value-warning">(+1.26)</span></p>
+                                             </div>
+                                           </div>
+                                         </div>
+                                       </div>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                          </div>
+                          <div class="col-5 h-100 pr-0">
+                            <div class="row">
+                               <p class="font-medium-regular title-highlight-color ml-2 mb-0">Opportunity<u>(6)</u></p>
+                            </div>
+                            <div class="row h-100 cards-row">
+                               <div class="card op-card w-100 mx-1 mt-1 mb-2">
+                                  <div class="card-body covenant-card-body p-1">
+                                     <div class="container covenant-container">
+                                       <div class="row h-100">
+                                          <div class="col-2 align-self-center">
+                                             <img src="/rmenable/images/icons/ic_payments.svg" class="report-icon-image" alt="My Requests" height="30px">
+                                          </div>
+                                          <div class="col-5 pr-0 align-self-center">
+                                             <p class="font-medium-regular mb-0"><u>234567890</u></p>
+                                             <p class="font-xtra-small-light mb-0">Floor Plan & Term Loan</p>
+                                          </div>
+                                          <div class="col-4 px-0 align-self-center">
+                                             <img src="/rmenable/images/icons/cdp.svg" class="report-icon-image" alt="My Requests" height="14px">
+                                             <p class="font-xtra-xtra-small-normal mb-0">Submitted:<span class="covenant-value-warning">01-08-18</span></p>
+                                          </div>
+                                       </div>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="card op-card w-100 mx-1 mt-1 mb-2">
+                                  <div class="card-body covenant-card-body p-1">
+                                     <div class="container covenant-container">
+                                       <div class="row h-100">
+                                          <div class="col-2 align-self-center">
+                                             <img src="/rmenable/images/icons/ic_payments.svg" class="report-icon-image" alt="My Requests" height="30px">
+                                          </div>
+                                          <div class="col-5 pr-0 align-self-center">
+                                             <p class="font-medium-regular mb-0"><u>234567890</u></p>
+                                             <p class="font-xtra-small-light mb-0">Real Estate</p>
+                                          </div>
+                                          <div class="col-4 px-0 align-self-center">
+                                             <img src="/rmenable/images/icons/cdp.svg" class="report-icon-image" alt="My Requests" height="14px">
+                                             <p class="font-xtra-xtra-small-normal mb-0">Submitted:<span class="covenant-value-warning">01-08-18</span></p>
+                                          </div>
+                                       </div>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="card op-card w-100 mx-1 mt-1 mb-2">
+                                  <div class="card-body covenant-card-body p-1">
+                                     <div class="container covenant-container">
+                                       <div class="row h-100">
+                                          <div class="col-2 align-self-center">
+                                             <img src="/rmenable/images/icons/ic_payments.svg" class="report-icon-image" alt="My Requests" height="30px">
+                                          </div>
+                                          <div class="col-5 pr-0 align-self-center">
+                                             <p class="font-medium-regular mb-0"><u>234567890</u></p>
+                                             <p class="font-xtra-small-light mb-0">Term Loan Deal</p>
+                                          </div>
+                                          <div class="col-4 px-0 align-self-center">
+                                             <img src="/rmenable/images/icons/cdp.svg" class="report-icon-image" alt="My Requests" height="14px">
+                                             <p class="font-xtra-xtra-small-normal mb-0">Submitted:<span class="covenant-value-warning">01-08-18</span></p>
+                                          </div>
+                                       </div>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                          </div>
+                          <div class="col-4 h-100 pr-0">
+                            <div class="row mr-0">
+                               <p class="font-medium-regular title-highlight-color ml-2 mb-0">Deposits</p>
+                            </div>
+                            <div class="row h-100 cards-row">
+                               <div class="card op-card w-100 m-1">
+                                  <div class="card-body covenant-card-body p-1">
+                                     <div class="container covenant-container">
+                                       <div class="row h-100">
+                                          <div class="col-2 align-self-baseline mt-1">
+                                             <img src="/rmenable/images/icons/ic_payments.svg" class="report-icon-image" alt="My Requests" height="30px">
+                                          </div>
+                                          <div class="col-5 pr-0 align-self-center">
+                                             <p class="font-medium-regular mb-0">ACAP123456</p>
+                                             <p class="font-xtra-xtra-small-light mb-0">Checking Account INB Branch</p>
+                                          </div>
+                                          <div class="col-4 px-0 align-self-center">
+                                            <div class="row justify-content-end">
+                                                <p class="font-medium-regular covenant-value-warning mb-0">on 13-10-18</p>
+                                            </div>
+                                            <div class="row justify-content-end">
+                                              <div class="col-6 px-0 text-right">
+                                                <p class="font-xtra-xtra-small-normal mb-0">Available</p>
+                                                <p class="font-xtra-xtra-small-light mb-0">$25000</p>
+                                              </div>
+                                              <div class="col-6 px-0 text-right">
+                                                <p class="font-xtra-xtra-small-normal mb-0">Available</p>
+                                                <p class="font-xtra-xtra-small-light mb-0">$25000</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                       </div>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="row mr-0 ">
+                               <p class="font-medium-regular title-highlight-color ml-2 mb-0">Loans</p>
+                            </div>
+                            <div class="row h-100 cards-row">
+                               <div class="card op-card w-100 mx-1 my-0">
+                                  <div class="card-body covenant-card-body p-1">
+                                     <div class="container covenant-container">
+                                       <div class="row h-100">
+                                          <div class="col-2 align-self-center">
+                                             <img src="/rmenable/images/icons/ic_payments.svg" class="report-icon-image" alt="My Requests" height="30px">
+                                          </div>
+                                          <div class="col-5 pr-0 align-self-center">
+                                             <p class="font-medium-regular mb-0">456123456</p>
+                                             <p class="font-xtra-xtra-small-light mb-0">Term Loan</p>
+                                          </div>
+                                          <div class="col-4 px-0 align-self-center">
+                                            <div class="row justify-content-end">
+                                                <img src="/rmenable/images/icons/downarrow.svg" class="report-icon-image" alt="My Requests" height="14px">
+                                            </div>
+                                            <div class="row justify-content-end">
+                                              <div class="col-6 px-0 text-left">
+                                                <p class="font-xtra-xtra-small-normal mb-0">Commited</p>
+                                                <p class="font-xtra-xtra-small-light mb-0">$25000</p>
+                                              </div>
+                                              <div class="col-6 px-0 text-right">
+                                                <p class="font-xtra-xtra-small-normal mb-0">Outstanding</p>
+                                                <p class="font-xtra-xtra-small-light mb-0">$25000</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                       </div>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                            <div class="row h-100 cards-row">
+                               <div class="card op-card w-100 m-1">
+                                  <div class="card-body covenant-card-body p-1">
+                                     <div class="container covenant-container">
+                                       <div class="row h-100">
+                                          <div class="col-2 align-self-center">
+                                             <img src="/rmenable/images/icons/ic_payments.svg" class="report-icon-image" alt="My Requests" height="30px">
+                                          </div>
+                                          <div class="col-5 pr-0 align-self-center">
+                                             <p class="font-medium-regular mb-0">456123456</p>
+                                             <p class="font-xtra-xtra-small-light mb-0">Term Loan</p>
+                                          </div>
+                                          <div class="col-4 px-0 align-self-center">
+                                            <div class="row justify-content-end">
+                                                <img src="/rmenable/images/icons/downarrow.svg" class="report-icon-image" alt="My Requests" height="14px">
+                                            </div>
+                                            <div class="row justify-content-end">
+                                              <div class="col-6 px-0 text-left">
+                                                <p class="font-xtra-xtra-small-normal mb-0">Commited</p>
+                                                <p class="font-xtra-xtra-small-light mb-0">$25000</p>
+                                              </div>
+                                              <div class="col-6 px-0 text-right">
+                                                <p class="font-xtra-xtra-small-normal mb-0">Outstanding</p>
+                                                <p class="font-xtra-xtra-small-light mb-0">$25000</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                       </div>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                          </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="accordion md-accordion accordion-2" id="accordionEx7" role="tablist" aria-multiselectable="true">
+               <!-- Accordion card -->
+               <div class="card">
+                  <!-- Card header -->
+                  <div class="card-header border-0 bg-color-light-grey mb-0" role="tab" id="heading2">
+                     <a data-toggle="collapse" data-parent="#accordionEx7" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                        <h5 class="mb-0 title-highlight-color ">
+                           In the News<i class="pl-2 fa fa-angle-down rotate-icon pull-right"></i>
+                        </h5>
+                     </a>
+                  </div>
+                  <!-- Card body -->
+                  <div id="collapse2" class="collapse show" role="tabpanel" aria-labelledby="heading2" data-parent="#accordionEx7">
+                     <div class="card-body h-100 mb-0 py-0 bg-color-light-grey">
+                       <div class="grid-layout">
+                           <div class="grid-item grid-item-1">
+                             <img src="/rmenable/images/icons/image.png" alt="facebook" width="100%" srcset="/rmenable/images/icons/image@2x.png 2x"></a>
+                             <p>166000 North American Nissans recalled
+                             </p>
+                           </div>
+                           <div class="grid-item grid-item-2 span-2">
+                             <div class="embed-container"><iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=lyKD&width=670&height=475" scrolling="no" frameborder="0" style="overflow:hidden; allowTransparency='true'"></iframe></div><script src="https://fred.stlouisfed.org/graph/js/embed.js" type="text/javascript"></script>
+                           </div>
+                           <div class="grid-item span-3 grid-item-3">
+                             <div class="embed-container"><iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=lyKG&width=670&height=475" scrolling="no" frameborder="0" style="overflow:hidden; allowTransparency='true'"></iframe></div>
+                           </div>
+                           <div class="grid-item grid-item-4">
+                             <img src="/rmenable/images/icons/image.png" alt="facebook" width="100%" srcset="images/icons/image@2x.png 2x"></a>
+                             <p>166000 North American Nissans recalled.
+                             </p>
+                           </div>
+                       </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Accordion card -->
+               <div class="card">
+                  <!-- Card header -->
+                  <div class="card-header border-0 bg-color-light-grey mb-0" role="tab" id="heading3">
+                     <a data-toggle="collapse" data-parent="#accordionEx7" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                        <h5 class="mb-0 title-highlight-color ">
+                           Performance Anaysis<i class="pl-2 fa fa-angle-down rotate-icon pull-right"></i>
+                        </h5>
+                     </a>
+                  </div>
+                  
+                  
+                  <!-- Card body -->
+                  <!-- <div id="collapse3" class="collapse show" role="tabpanel" aria-labelledby="heading3" data-parent="#accordionEx7">
+                      PERFORMANCE BLOCK
+                  </div> -->
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Footer -->
+      <script src="js/jquery-min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+        <script data-require="angular.js@1.2.28" data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular.js"></script>
+      
+      <script src="https://fred.stlouisfed.org/graph/js/embed.js" type="text/javascript"></script>
+      <script src="https://cdn.rawgit.com/FremyCompany/css-grid-polyfill/master/bin/css-polyfills.min.js"></script>
+      <script type="text/javascript" src="js/mdb.min.js"></script>
+      
+        <script>
+      var app = angular.module('app', []);
+      
+      app.controller('dashboardCtrl', function ($scope, $http){
+         // var url = "/mockDashboard.json";
+
+        $http.get($scope.customerdata).success(function(data) {
+          $scope.dashboard = data;
+          console.log(" $scope.dashboard",  $scope.dashboard);
+        });
+      });
+    </script>
+   </body>
+</html>

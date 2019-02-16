@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 37">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #43425d;
+        font-size: 28px;
+        font-family: SegoeUI, Segoe UI;
+      }
+
+      .cls-2 {
+        fill: #026fc2;
+      }
+
+      .cls-3 {
+        fill: #21567e;
+      }
+    </style>
+  </defs>
+  <g id="telteklogo" transform="translate(-371 -215)">
+    <text id="Teletek" class="cls-1" transform="translate(412 245)"><tspan x="0" y="0">Teletek</tspan></text>
+    <g id="Logo" transform="translate(371 222)">
+      <g id="Logo_Blue_Small" data-name="Logo / Blue / Small">
+        <g id="Logo_Blue_Small-2" data-name="Logo / Blue / Small">
+          <rect id="Rectangle" class="cls-2" width="8" height="8" rx="4" transform="translate(20 10)"/>
+          <rect id="Rectangle-2" data-name="Rectangle" class="cls-2" width="8" height="8" rx="4" transform="translate(0 10)"/>
+          <rect id="Rectangle-3" data-name="Rectangle" class="cls-3" width="8" height="8" rx="4" transform="translate(10 20)"/>
+          <rect id="Rectangle-4" data-name="Rectangle" class="cls-3" width="8" height="8" rx="4" transform="translate(10)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

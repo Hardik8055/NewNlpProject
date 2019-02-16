@@ -1,0 +1,57 @@
+# make all patterns case-sensitive
+# ENV.defaultStringMatchFlags = 0
+# ENV.defaultStringPatternFlags = 0
+
+
+ner = { type: "CLASS", value: "edu.stanford.nlp.ling.CoreAnnotations$NamedEntityTagAnnotation" }
+tokens = { type: "CLASS", value: "edu.stanford.nlp.ling.CoreAnnotations$TokensAnnotation" }
+
+$LEVEL1="/Toyota|Cheverlot|Buick|GMC|Cadillac|Ford|Fiat|Jaguar/"
+# $LEVEL2="/Sales|Electric Car|Autonomous|recall|open recall|urgent recall|bankruptcy|litigation|sales/"
+# $LEVEL22="/Recall|recall|open recall|urgent recall|bankruptcy|litigation|recalling|Recalling/"
+$LEVEL2="/Sales|Electric Car|Autonomous|bankruptcy|litigation|sales|revenue|earnings|income/"
+$LEVEL22="/bankruptcy|litigation/"
+$LEVEL3="/Dip|decrease|down|decline|increase|up|rise|drop|profit|dipped/"
+$LEVEL33="/Prius|light-truck/"
+$REGION="/USA|United States/"
+$RATES1="/rising|increasing|decreasing|Rising|Increasing|Decreasing|rise|Rise/"
+$RATES2="/interest|Interest/"
+$RATES3="/rates|Rates/"
+# $COND1="/consumer|confidence|Consumer|Confidence/"
+$DEALERR="/Sarasota|sarasota|VanMatre|vanmatre|Warren|Feeny|feeny|warren/"
+
+ENV.defaults["stage"] = 1
+# { ruleType: "tokens", pattern: ([{word:$LEVEL1}]+), action: Annotate($0, ner, "LEVEL1COMPANY")}
+ { ruleType: "tokens", pattern: ([{ner:"ORGANIZATION"} & {word:$LEVEL1}]+), action: Annotate($0, ner, "LEVEL1COMPANY")}
+ENV.defaults["stage"] = 2
+{ ruleType: "tokens", pattern: ([{word:$LEVEL2}]+), action: Annotate($0, ner, "LEVEL2DES")}
+ENV.defaults["stage"] = 3
+{ ruleType: "tokens", pattern: ([{word:$LEVEL3}]+), action: Annotate($0, ner, "LEVEL3DES")}
+ENV.defaults["stage"] = 4
+{ruleType: "tokens", pattern: (([{word:$LEVEL22}]+)), action: Annotate($0, ner, "LEVEL2REC")}
+ENV.defaults["stage"] = 5
+{ruleType: "tokens", pattern: (([{word:$LEVEL33}]+)), action: Annotate($0, ner, "LEVEL3REC")}
+# { ruleType: "tokens", pattern: ([{ner: "LEVEL1COMPANY"}] [{ner: "LEVEL2DES"}]), action: Annotate($0, ner, "LEVEL1AND2")}
+ENV.defaults["stage"] = 6
+ { ruleType: "tokens", pattern: ([{ner:"NUMBER"}] [{word:/million|lakhs/}]), action: Annotate($0, ner, "O")}
+ENV.defaults["stage"] = 7
+ { ruleType: "tokens", pattern: ([{ner:"LEVEL2DES"}] [{word:/plunging|falling|raising|increasing|decreasing/}]), action: Annotate($0, ner, "LEVEL12DEC")}
+ENV.defaults["stage"] = 8
+ { ruleType: "tokens", pattern: ([{ner:"LEVEL3REC"}] [{word:"demand"}] [{word:/dipping|drops/}]), action: Annotate($0, ner, "LEVEL13DEC")}
+ENV.defaults["stage"] = 9
+ { ruleType: "tokens", pattern: ([{word:$RATES1}]+), action: Annotate($0, ner, "LEVEL1INT")}
+ENV.defaults["stage"] = 10
+ { ruleType: "tokens", pattern: ([{word:$RATES2}]+), action: Annotate($0, ner, "LEVEL2INT")}
+ENV.defaults["stage"] = 11
+ { ruleType: "tokens", pattern: ([{word:$RATES3}]+), action: Annotate($0, ner, "LEVEL3INT")}
+ENV.defaults["stage"] = 12
+ { ruleType: "tokens", pattern: ([{ner:"LEVEL1INT"}] [{ner:"LEVEL2INT"}][{ner:"LEVEL3INT"}]), action: Annotate($0, ner, "LEVEL3RAT")}
+ENV.defaults["stage"] = 13
+ { ruleType: "tokens", pattern: ([{ner:"LEVEL1INT"}] [{word:/in/}][{ner:"LEVEL2INT"}][{ner:"LEVEL3INT"}]), action: Annotate($0, ner, "LEVEL3RAT")}
+ENV.defaults["stage"] = 14
+ { ruleType: "tokens", pattern: ([{word:/consumer|Consumer/}] [{word:/confidence|Confidence/}]), action: Annotate($0, ner, "COND1")}
+ENV.defaults["stage"] = 15
+ { ruleType: "tokens", pattern: ([{word:/SAAR|saar/}] ), action: Annotate($0, ner, "SAAR")}
+ENV.defaults["stage"] = 16
+ { ruleType: "tokens", pattern: ([{ner:"ORGANIZATION"} & {word:$DEALERR}]+ ), action: Annotate($0, ner, "DEALER")}
+

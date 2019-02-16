@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<HTML>
+<meta charset="utf-8">
+<style> /* set the CSS */
+#iFeatures {
+	position: absolute;
+	width: 50%;
+	height: 73px;
+	left: 0;
+	bottom: 126px;
+	background-color: rgba(0, 39, 62, .85);
+}
+
+.ticker {
+	position: absolute;
+	top: 25%;
+	left: 40px;
+	right: 10px;
+	bottom: 10%;
+	overflow: hidden;
+}
+
+.ticker p {
+	position: relative;
+	top: 0;
+	white-space: nowrap;
+	width: auto;
+	color: white;
+}
+
+.ticker a {
+	color: white;
+}
+</style>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	$(document)
+			.ready(
+					function() {
+
+						/*  var html_to_insert = "<li><p>This is a custom ticker</p></li>";
+						
+						 document.getElementById('tickerId').insertAdjacentHTML('beforeend', html_to_insert); */
+
+						var block_arr = $('.ticker li p').map(function() {
+							return $(this).get(0);
+						}).toArray();
+
+						var ticker_item = $(block_arr[0]);
+						$(".ticker").html(ticker_item);
+						var ticker_width = $(".ticker").width();
+						var text_x = ticker_width;
+
+						console.log(block_arr.indexOf(ticker_item.get(0)));
+						console.log(block_arr.length);
+
+						scroll_ticker = function() {
+							text_x--;
+							ticker_item.css("left", text_x);
+							if (text_x < -1 * ticker_item.width()) {
+								ticker_item = $(block_arr[(block_arr
+										.indexOf(ticker_item.get(0)) + 1 == block_arr.length) ? 0
+										: block_arr.indexOf(ticker_item.get(0)) + 1]);
+								ticker_item.css("left", text_x);
+								$(".ticker").html(ticker_item);
+								text_x = ticker_width;
+							}
+						}
+						setInterval(scroll_ticker, 7);
+					});
+
+	function WebSocketTest() {
+
+		if ("WebSocket" in window) {
+			//alert("WebSocket is supported by your Browser!");
+
+			// Let us open a web socket
+			var ws = new WebSocket("ws://192.168.43.127:8085/rmenable/api/v1/rssfeed");
+
+			ws.onopen = function() {
+
+				// Web Socket is connected, send data using send()
+				ws.send("Message to send");
+				//alert("Message is sent...");
+				document.getElementById('newsId').innerHTML = "Message is sent";
+			};
+
+			ws.onmessage = function(evt) {
+				var received_msg = evt.data;
+				//alert("Message is received..."+received_msg);
+				var html_to_insert = "<li><p>"+received_msg+"</p></li>";
+				document.getElementById('newsId').insertAdjacentHTML(
+						'beforeend', html_to_insert);
+				
+				//document.getElementById('newsId').innerHTML += received_msg;
+
+			};
+
+			ws.onclose = function() {
+
+				// websocket is closed.
+				alert("Connection is closed...");
+			};
+		} else {
+
+			// The browser doesn't support WebSocket
+			alert("WebSocket NOT supported by your Browser!");
+		}
+	}
+</script>
+<body>
+ 	<div id="iFeatures">
+		<div class="ticker" id="tickerId">
+			<li><p>This is a test ticker 1.</p></li>
+		</div>
+	</div> 
+
+	<div id="sse">
+		<a href="javascript:WebSocketTest()">Run WebSocket</a>
+	</div>
+	<div>
+	<p id = "newsId"><p>
+	</div>
+
+</body>
+
+</HTML>

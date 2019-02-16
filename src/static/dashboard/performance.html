@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  <script data-require="angular.js@1.2.28" data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular.js"></script>
+  <script data-require="angular-route@1.2.28" data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular-route.js"></script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    
+</head>
+<body>
+<!-- Menu bar starts -->
+<nav class="navbar menu-color">
+  <div class="container-fluid nav-width">
+    
+    <ul class="nav navbar-nav">
+   		 <li id="carsId">
+	    	<a class="nav-link" href="#/linechart">Cars Sold</a>
+	    </li>
+        
+     	<li id="noId" class ="active">
+     		<a class="nav-link" href="#/RangeBarChart" >Number Of Days</a>
+     	</li>
+        <li id="ageingId" >
+       	 	<a class="nav-link"  href="#/stackedbarchart">Ageing Analysis</a>
+        </li>
+	    <li id="carSoldId">
+	    	<a class="nav-link"  href="#/groupedbarchart">Cars Sold -Peers</a>
+	    </li>
+        <li id="daysId" >
+       		 <a class="nav-link" href="#/multiplechart">Number Of Days -Peers</a>
+        </li>
+                      
+    </ul>
+    
+  </div>
+   <div ng-view></div>
+  
+</nav>
+
+ 
+  <!-- Menu bar ends -->
+  
+ 
+ <script lang ="JavaScript">
+ $(function() {
+	 //Making selected class active
+	 
+     $( 'ul.nav li' ).on( 'click', function() {
+           $( this ).parent().find( 'li.active' ).removeClass( 'active' );
+           $( this ).addClass( 'active' );
+     });
+   
+});
+ 
+ //Routing Logic starts
+ var routingExample = angular.module('app', ['ngRoute']);
+
+ routingExample.config(function ($routeProvider) {
+     $routeProvider
+     
+     .when('/linechart', {
+         templateUrl: '/rmenable/dashboard/linechart.html'
+         
+     })
+   
+     .when('/RangeBarChart', {
+         templateUrl: '/rmenable/dashboard/RangeBarChart.html'
+         
+     })
+     
+     .when('/stackedbarchart', {
+         templateUrl: '/rmenable/dashboard/stackedbarchart.html'
+     })
+     
+       .when('/groupedbarchart', {
+         templateUrl: '/rmenable/dashboard/groupedbarchart.html'
+     })
+     
+      .when('/multiplechart', {
+         templateUrl: '/rmenable/dashboard/multiplechart.html'
+     })
+     
+     .otherwise({
+         redirectTo: '/rmenable/dashboard/RangeBarChart.html'
+     });
+     
+ });
+ //Routing Logic Ends
+
+ </script>
+
+</body>
+</html>

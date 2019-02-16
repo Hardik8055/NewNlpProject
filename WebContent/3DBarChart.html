@@ -1,0 +1,72 @@
+<!-- Styles -->
+<style>
+#chartdiv {
+  width: 50%;
+  height: 500px;
+}										
+</style>
+
+<!-- Resources -->
+<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="https://www.amcharts.com/lib/3/serial.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+
+<!-- Chart code -->
+<script>
+var chart = AmCharts.makeChart("chartdiv", {
+    "theme": "light",
+    "type": "serial",
+	"startDuration": 2,
+    "dataProvider": [{
+        "country": "Q1",
+        "visits": 300,
+        "color": "lightblue"
+    }, {
+        "country": "Q2",
+        "visits": 250,
+        "color": "blue"
+    }, {
+        "country": "Q3",
+        "visits": 150,
+        "color": "blue"
+    }, {
+        "country": "Q4",
+        "visits": 350,
+        "color": "blue"
+    }],
+    
+    "valueAxes": [{
+        "position": "left",
+        "title": ""
+    }],
+    "graphs": [{
+        "balloonText": "[[category]]: <b>[[value]]</b>",
+        "fillColorsField": "color",
+        "fillAlphas": 1,
+        "lineAlpha": 0.1,
+        "type": "column",
+        "valueField": "visits"
+    }],
+    "depth3D": 20,
+	"angle": 30,
+    "chartCursor": {
+        "categoryBalloonEnabled": false,
+        "cursorAlpha": 0,
+        "zoomable": false
+    },
+    "categoryField": "country",
+    "categoryAxis": {
+        "gridPosition": "start",
+        "labelRotation": 90
+    },
+    "export": {
+    	"enabled": true
+     }
+
+});
+</script>
+
+<!-- HTML -->
+<div id="chartdiv"></div>

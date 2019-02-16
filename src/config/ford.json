@@ -1,0 +1,266 @@
+{
+	"status": "ok",
+	"totalResults": 52,
+	"articles": [
+		{
+			"source": {
+				"id": "the-times-of-india",
+				"name": "The Times of India"
+			},
+			"author": null,
+			"title": "Car sales in slow lane as high fuel cost, floods",
+			"description": "Domestic passenger vehicles sales moved in the slow lane in September with major manufacturers on Monday reporting either single-digit growth or decline due to high fuel cost and floods in parts of the country affecting consumer buying sentiment.",
+			"url": "https://timesofindia.indiatimes.com/auto/cars/passenger-vehicle-sales-in-slow-lane-in-september-as-high-fuel-cost-floods-take-toll/articleshow/66039479.cms",
+			"urlToImage": "https://static.toiimg.com/thumb/msid-66039488,width-1070,height-580,imgsize-1403856,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+			"publishedAt": "2018-10-02T07:48:00Z",
+			"content": "NEW DELHI: Domestic passenger vehicles sales moved in the slow lane in September with major manufacturers on Monday reporting either single-digit growth or decline due to high fuel cost and floods in parts of the country affecting consumer buying sentiment. W… [+3870 chars]"
+		},
+		{
+			"source": {
+				"id": null,
+				"name": "Seekingalpha.com"
+			},
+			"author": "BAM Investments",
+			"title": "Ford's Sales Dip In September Ahead Of 3rd Quarter Earnings",
+			"description": "Ford posted an 11.2% decrease in U.S. auto sales in September 2018 compared with September 2017, which came in slightly lower than the 10% forecasted by Edmunds",
+			"url": "https://seekingalpha.com/article/4210315-fords-sales-dip-september-ahead-3rd-quarter-earnings",
+			"urlToImage": "https://static.seekingalpha.com/uploads/2018/10/4/19425361-15387049956746237.png",
+			"publishedAt": "2018-10-08T06:27:56Z",
+			"content": "Investment Thesis Ford (NYSE: F ) posted a worse-than-expected month in September with sales decreasing 11.2%, capping a weak 3 rd quarter. Truck sales continued to remain strong as consumer preference shifts to larger automobiles due to lower gas prices and … [+16313 chars]"
+		},
+		{
+			"source": {
+				"id": null,
+				"name": "Marketwatch.com"
+			},
+			"author": "Barbara Kollmeyer",
+			"title": "Need to Know: A ‘lost decade’ for stocks will take the S&P 500 to 1,400, says this adviser",
+			"description": "It has been a rough week for investors, and while some smell opportunity, our call of the day says this market has a big fat ‘for sale’ sign on it, as he predicts a ‘lost decade’ for stocks",
+			"url": "https://www.marketwatch.com/story/a-lost-decade-for-stocks-will-take-the-sp-500-to-1400-says-this-adviser-2018-10-25",
+			"urlToImage": "http://s.marketwatch.com/public/resources/MWimages/MW-GS386_wallst_ZG_20181025062826.jpg",
+			"publishedAt": "2018-10-25T11:22:38Z",
+			"content": "Another dip-buying dilemma greets investors for Thursday, after a hard Wall Street reset dumped the Nasdaq in bear territory and wiped out 2018 gains for the Dow and S&amp;P 500. Buy on dip? Everything is dipping. Key now is who can stomach higher USD rates. … [+6016 chars]"
+		},
+		{
+			"source": {
+				"id": null,
+				"name": "Motortrend.com"
+			},
+			"author": "Alisa Priddle",
+			"title": "Ford Unplugged: Leadership Opens up to Dealers",
+			"description": "“Ford is at its best when it can make a comeback,” said Jim Farley, Ford executive vice president and president of Global Markets. “This week is a great first step.” He was referring to a national dealer meeting in Las Vegas attended by the full top leadershi…",
+			"url": "https://www.motortrend.com/news/ford-unplugged-leadership-opens-dealers/",
+			"urlToImage": "https://st.motortrend.com/uploads/sites/5/2018/10/2019-Ford-Ranger-front-three-quarter-in-motion.jpg",
+			"publishedAt": "2018-10-19T10:00:03Z",
+			"content": "The Ranger platform is also the foundation for the Ford Bronco SUV coming in 2020. This is part of a plan to replace 75 percent of Ford's lineup by 2020, dropping the average age of the portfolio from 5.3 years now to 2.3 years by the new decade. Most of the … [+5334 chars]"
+		},
+		{
+			"source": {
+				"id": null,
+				"name": "Brandchannel.com"
+			},
+			"author": "Dale Buss",
+			"title": "‘Built Ford Proud’: Automaker Brings Back Swagger in Major Campaign",
+			"description": "Looking for a sales rebound, auto brand taps actor Bryan Cranston to star in new creative effort The post ‘Built Ford Proud’: Automaker Brings Back Swagger in Major Campaign appeared first on brandchannel:.",
+			"url": "https://www.brandchannel.com/2018/10/22/built-ford-proud-swagger/",
+			"urlToImage": "https://www.brandchannel.com/wp-content/uploads/2018/10/bryan-cranston-ford.jpg",
+			"publishedAt": "2018-10-22T19:58:11Z",
+			"content": "If it hasn’t been obvious lately that there’s a crucial battle going on for the future of the automotive business between Silicon Valley and the traditional auto industry, Ford’s new omnibus marketing campaign draws a type of line in the sand. After actor Bry… [+2495 chars]"
+		},
+		{
+			"source": {
+				"id": "reuters",
+				"name": "Reuters"
+			},
+			"author": "Nick Carey",
+			"title": "'A tale of two hurricanes' for September U.S. new car sales",
+			"description": "Major automakers on Tuesday posted a hefty drop in U.S. new vehicle sales for September, caused in part by a drop in sales in areas hit by Hurricane Florence and a tough comparison to the previous September when consumers rushed to replace vehicles damaged by…",
+			"url": "https://www.reuters.com/article/us-usa-autos-sales/a-tale-of-two-hurricanes-for-september-u-s-new-car-sales-idUSKCN1MC1WC",
+			"urlToImage": "https://s1.reutersmedia.net/resources/r/?m=02&d=20181002&t=2&i=1310495311&w=1200&r=LYNXNPEE911C0",
+			"publishedAt": "2018-10-02T17:34:25Z",
+			"content": "DETROIT (Reuters) - Major automakers on Tuesday posted a hefty drop in U.S. new vehicle sales for September, caused in part by a drop in sales in areas hit by Hurricane Florence and a tough comparison to the previous September when consumers rushed to replace… [+4238 chars]"
+		},
+		{
+			"source": {
+				"id": null,
+				"name": "Fool.com"
+			},
+			"author": "newsfeedback@fool.com (Motley Fool Transcribers)",
+			"title": "Ford Motor Co (F) Q3 2018 Earnings Conference Call Transcript",
+			"description": "F earnings call for the period ending September 30, 2018",
+			"url": "https://www.fool.com/earnings/call-transcripts/2018/10/24/ford-motor-co-f-q3-2018-earnings-conference-call-t.aspx",
+			"urlToImage": "https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Feditorial%2Fimages%2F498342%2Ffeatured-transcript-logo.png&h=630&w=1200&op=resize",
+			"publishedAt": "2018-10-25T02:50:37Z",
+			"content": "Image source: The Motley Fool. Ford Motor Co ( NYSE:F ) Q3 2018 Earnings Conference Call Oct. 24, 2018, 5:30 p.m. ET Contents: Prepared Remarks Questions and Answers Call Participants Prepared Remarks: Operator Good day. My name is Ian, and I will be your con… [+61715 chars]"
+		},
+		{
+			"source": {
+				"id": null,
+				"name": "Paultan.org"
+			},
+			"author": "Mick Chan",
+			"title": "European car sales drop due to WLTP regulations; Vauxhall Corsa on top, VW Golf drops 71% – report",
+			"description": "The car market in Europe has seen the largest drop in monthly sales of the decade so far, with the month of September experiencing a 23.4% drop year-on-year from the impact of the recently introduced […] The post European car sales drop due to WLTP regulation…",
+			"url": "https://paultan.org/2018/10/25/european-car-sales-drop-due-to-wltp-regulations-vauxhall-corsa-on-top-vw-golf-drops-71-report/",
+			"urlToImage": "https://s2.paultan.org/image/2014/07/Vauxhall-Corsa-292216-630x472.jpg",
+			"publishedAt": "2018-10-25T08:08:55Z",
+			"content": "The car market in Europe has seen the largest drop in monthly sales of the decade so far, with the month of September experiencing a 23.4% drop year-on-year from the impact of the recently introduced WLTP (Worldwide Harmonised Light Vehicle Test Procedure) em… [+2191 chars]"
+		},
+		{
+			"source": {
+				"id": null,
+				"name": "Firstpost.com"
+			},
+			"author": "Press Trust of India",
+			"title": "Passenger vehicle sales in slow lane in September as high fuel cost, floods take toll",
+			"description": "While Maruti Suzuki India, Tata Motors and Toyota Kirloskar posted single-digit sales growth in September, Hyundai, Mahindra & Mahindra (M&M) and Ford witnessed a decline in sales. The post Passenger vehicle sales in slow lane in September as high fuel cost, …",
+			"url": "https://www.firstpost.com/business/passenger-vehicle-sales-in-slow-lane-in-september-as-high-fuel-cost-floods-take-toll-5296541.html",
+			"urlToImage": "https://images.firstpost.com/wp-content/uploads/2018/01/maruti-cars_social.jpg",
+			"publishedAt": "2018-10-01T14:17:10Z",
+			"content": "New Delhi: Domestic passenger vehicles sales moved in slow lane in September with major manufacturers on Monday reporting either single-digit growth or decline due to high fuel cost and floods in parts of the country affecting consumer buying sentiment. While… [+3887 chars]"
+		},
+		{
+			"source": {
+				"id": null,
+				"name": "Cleantechnica.com"
+			},
+			"author": "Steve Hanley",
+			"title": "New Car Sales In Free Fall In UK And Europe Thanks To WLTP Fuel Economy Standard",
+			"description": "New car sales in Europe and the Uk have gone over a cliff since the new WLTP fuel economy standard took effect on September 1. That may be a good thing for hybrids, plug-in hybrids, and electric cars.",
+			"url": "https://cleantechnica.com/2018/10/06/new-car-sales-in-free-fall-in-uk-and-europe-thanks-to-wltp-fuel-economy-standard/",
+			"urlToImage": "https://cleantechnica.com/files/2018/02/VW-e-Golfs-Hamburg-570x370.jpg",
+			"publishedAt": "2018-10-06T18:00:02Z",
+			"content": "Cars Published on October 6th, 2018 | by Steve Hanley 0 October 6th, 2018 by Steve Hanley People hated the old NEDC fuel economy standard used throughout Europe and the UK for the past several years. It was related to real world driving about as much as a fis… [+2827 chars]"
+		},
+		{
+			"source": {
+				"id": null,
+				"name": "247wallst.com"
+			},
+			"author": "Paul Ausick",
+			"title": "Ford F-Series Dominates Pickup Market",
+			"description": "Ford's best-selling F-Series pickups continue to dominate U.S. sales totals, both for the month of September and for the first nine months of 2018. Both Nissan and Toyota reported strong sales of midsize pickups.",
+			"url": "http://247wallst.com/autos/2018/10/02/ford-f-series-dominates-pickup-market/",
+			"urlToImage": "https://s2.wp.com/wp-content/themes/vip/247wallst/images/247-50x50.png",
+			"publishedAt": "2018-10-02T16:05:40Z",
+			"content": "Ford Motor Co. (NYSE: F) sold 75,092 F-Series pickups in September, topping sales of Fiat Chrysler Automobiles N.V. (NYSE: FCAU) Ram pickups of 51,856 units. For the first three quarters of 2018, Ford has sold 659,018 F-Series pickups to Ram’s total of 375,58… [+2270 chars]"
+		},
+		{
+			"source": {
+				"id": null,
+				"name": "Moneycontrol.com"
+			},
+			"author": null,
+			"title": "This week in auto: MM to develop engine for Ford, electric two-wheeler makers rejoice on sales jump",
+			"description": "Here is a complete round-up of all major news breaks in the automotive space this week",
+			"url": "https://www.moneycontrol.com/news/technology/auto/this-week-in-auto-mm-to-develop-engine-for-ford-electric-two-wheeler-makers-rejoice-on-sales-jump-3066391.html",
+			"urlToImage": "https://static-news.moneycontrol.com/static-mcnews/2018/10/Porsche-Cayenne-770x433.jpg",
+			"publishedAt": "2018-10-20T11:39:14Z",
+			"content": "A couple of new introductions and an unveiling summed up action in the new product launch space for motown this week. But the electric vehicle (EV) space witnessed the most excitement. A British car brand owned by a Chinese company announced their EV plans fo… [+5120 chars]"
+		},
+		{
+			"source": {
+				"id": null,
+				"name": "Motorauthority.com"
+			},
+			"author": "feedback@highgearmedia.com (Viknesh Vijayenthiran), Viknesh Vijayenthiran",
+			"title": "2019 Audi e-tron review, 2019 Mazda CX-5, all-female race series: Car News Headlines",
+			"description": "Audi's e-tron is almost ready for its showroom debut and we've had a chance to get behind the wheel of one, albeit a prototype. We found the e-tron to be a promising entry to the electric car arena, especially when you factor in the very reasonable $75,795 st…",
+			"url": "https://www.motorauthority.com/news/1119304_2019-audi-e-tron-review-2019-mazda-cx-5-all-female-race-series-car-news-headlines",
+			"urlToImage": "https://images.hgmsites.net/hug/audi_100674765_h.jpg",
+			"publishedAt": "2018-10-11T15:00:00Z",
+			"content": "2019 Audi e-tron prototype first drive, Namibia, Africa, October, 2018 Audi's e-tron is almost ready for its showroom debut and we've had a chance to get behind the wheel of one, albeit a prototype. We found the e-tron to be a promising entry to the electric … [+1117 chars]"
+		},
+		{
+			"source": {
+				"id": null,
+				"name": "Firstpost.com"
+			},
+			"author": "Reuters",
+			"title": "‘A tale of two hurricanes’ for September U.S. new car sales",
+			"description": "By Nick Carey DETROIT (Reuters) - Major automakers on Tuesday posted a hefty drop in U.S. new vehicle sales for September, caused in part by a drop in sales in areas hit by Hurricane Florence and a tough comparison to the previous September when consumers rus…",
+			"url": "https://www.firstpost.com/business/a-tale-of-two-hurricanes-for-september-u-s-new-car-sales-5304531.html",
+			"urlToImage": "https://images.firstpost.com/wp-content/uploads/reuters/10-2018/03/2018-10-02T175005Z_1_LYNXNPEE911L8_RTROPTP_2_USA-AUTOS-SALES.jpg",
+			"publishedAt": "2018-10-02T18:35:53Z",
+			"content": "By Nick Carey DETROIT (Reuters) - Major automakers on Tuesday posted a hefty drop in U.S. new vehicle sales for September, caused in part by a drop in sales in areas hit by Hurricane Florence and a tough comparison to the previous September when consumers rus… [+4196 chars]"
+		},
+		{
+			"source": {
+				"id": null,
+				"name": "Cleantechnica.com"
+			},
+			"author": "Loren McDonald",
+			"title": "What’s Behind US Sales Success Of The BMW 530e & What Lessons Can We Take Away?",
+			"description": "When we think about BMW and electric vehicles, the i3 is likely the first thing that comes to mind for most people. But the i3 isn’t even the German automaker’s top seller when put up against 5 other plug-in vehicles in the US, all plug-in hybrids",
+			"url": "https://cleantechnica.com/2018/10/06/whats-behind-us-sales-success-of-the-bmw-530e-what-lessons-can-we-take-away/",
+			"urlToImage": "https://cleantechnica.com/files/2018/09/BMW-530e.jpg",
+			"publishedAt": "2018-10-07T00:59:14Z",
+			"content": "Cars Published on October 6th, 2018 | by Loren McDonald 0 October 6th, 2018 by Loren McDonald When we think about BMW and electric vehicles, the i3 is likely the first thing that comes to mind for most people. But the i3 isnt even the German automakers top se… [+8905 chars]"
+		},
+		{
+			"source": {
+				"id": null,
+				"name": "Shtfplan.com"
+			},
+			"author": "Mac Slavo",
+			"title": "Economic Woes? New Car Sales Plunge 20% In UK & US In September",
+			"description": "A new report is saying that new car sales took a nosedive in September, signaling economic distress could be just around the corner. The downward trend in the United States is being blamed on two hurricanes, while the slump in sales in the United Kingdom is b…",
+			"url": "http://www.shtfplan.com/headline-news/economic-woes-new-car-sales-plunge-20-in-uk-us-in-september_10042018",
+			"urlToImage": "http://shtfplan.com/wp-content/uploads/2018/02/cars2.jpg",
+			"publishedAt": "2018-10-04T14:30:29Z",
+			"content": "A new report is saying that new car sales took a nosedive in September, signaling economic distress could be just around the corner. The downward trend in the United States is being blamed on two hurricanes, while the slump in sales in the United Kingdom is b… [+2283 chars]"
+		},
+		{
+			"source": {
+				"id": null,
+				"name": "Moneycontrol.com"
+			},
+			"author": null,
+			"title": "New car, bike launches fail to light up showrooms",
+			"description": "Strong competition, high fuel prices, increased interest and insurance rates and a pan-India deficit of 9 percent in monsoon have taken a toll on all new launches",
+			"url": "https://www.moneycontrol.com/news/technology/auto/new-car-bike-launches-fail-to-light-up-showrooms-3017271.html",
+			"urlToImage": "https://static-news.moneycontrol.com/static-mcnews/2018/02/toyota-yaris-770x433.jpg",
+			"publishedAt": "2018-10-05T15:03:08Z",
+			"content": "The launch of nearly half a dozen new car and two-wheeler models in the year so far has failed to excite Indian customers. Strong competition, high fuel prices, increased interest and insurance rates and a pan-India deficit of 9 percent in monsoon have dampen… [+2469 chars]"
+		},
+		{
+			"source": {
+				"id": null,
+				"name": "Voanews.com"
+			},
+			"author": "webdesk@voanews.com (Reuters)",
+			"title": "'A Tale of Two Hurricanes' for September US New Car Sales",
+			"description": "Major automakers on Tuesday posted a hefty drop in U.S. new vehicle sales for September, caused in part by a drop in sales in areas hit by Hurricane Florence and a tough comparison to the previous September when consumers rushed to replace vehicles damaged by…",
+			"url": "https://www.voanews.com/a/tale-two-hurricanes-september-us-new-car-sales/4596845.html",
+			"urlToImage": "https://gdb.voanews.com/9D0C89BE-9FE5-4F76-AF26-E9AB7849AF68_w1200_r1_s.jpg",
+			"publishedAt": "2018-10-02T20:16:40Z",
+			"content": "DETROIT Major automakers on Tuesday posted a hefty drop in U.S. new vehicle sales for September, caused in part by a drop in sales in areas hit by Hurricane Florence and a tough comparison to the previous September when consumers rushed to replace vehicles da… [+4001 chars]"
+		},
+		{
+			"source": {
+				"id": null,
+				"name": "247wallst.com"
+			},
+			"author": "Paul Ausick",
+			"title": "What Do Q3 Auto Sales and Transaction Prices Suggest About Earnings?",
+			"description": "Third-quarter auto sales are a pretty good hint at what we can expect to see when carmakers begin reporting earnings later this week and next.",
+			"url": "http://247wallst.com/autos/2018/10/23/what-do-q3-auto-sales-and-transaction-prices-suggest-about-earnings/",
+			"urlToImage": "https://s2.wp.com/wp-content/themes/vip/247wallst/images/247-50x50.png",
+			"publishedAt": "2018-10-23T15:05:55Z",
+			"content": "Automakers report U.S. sales volume right around the first of every month (or quarter), so when earnings season rolls around, analysts and investors have a pretty good idea of what they’re going to hear. The analysts at Cox Automotive have looked at the sales… [+3652 chars]"
+		},
+		{
+			"source": {
+				"id": null,
+				"name": "247wallst.com"
+			},
+			"author": "Paul Ausick",
+			"title": "September Car Sales Plunge in Europe",
+			"description": "Following a month of booming auto sales in the European Union, September sales plunged more than 20% as new emissions and fuel-consumption testing procedures were implemented.",
+			"url": "http://247wallst.com/autos/2018/10/17/september-car-sales-plunge-in-europe/",
+			"urlToImage": "https://s2.wp.com/wp-content/themes/vip/247wallst/images/247-50x50.png",
+			"publishedAt": "2018-10-17T11:40:35Z",
+			"content": "The European Automobile Manufacturers Association (ACEA) on Wednesday reported new vehicle registration totals in the European Union for the month of September. Sales tumbled by 23.5% year over year in the month, primarily due to the September 1 implementatio… [+2666 chars]"
+		}
+	]
+}
