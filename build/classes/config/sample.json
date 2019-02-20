@@ -1,1 +1,71 @@
-{"status":"ok","totalResults":5,"articles":[{"source":{"id":"the-times-of-india","name":"The Times of India"},"author":null,"title":"Toyota is recalling about 2.4 million hybrid cars worldwide that could stall while driving.The Japanese automaker said Friday that the recall affects about 807,000 Toyota Prius cars in the U.S. It covers certain 2010 to 2014 Prius hybrids and certain 2012 to 2014 Prius V hybrids.The defect occurs in 'rare situations,' Toyota said. It involves the vehicle failing to enter a fail-safe driving mode in response to certain hybrid system faults.","description":"Domestic passenger vehicles sales moved in the slow lane in September with major manufacturers on Monday reporting either single-digit growth or decline due to high fuel cost and floods in parts of the country affecting consumer buying sentiment.","url":"https://timesofindia.indiatimes.com/auto/cars/passenger-vehicle-sales-in-slow-lane-in-september-as-high-fuel-cost-floods-take-toll/articleshow/66039479.cms","urlToImage":"https://static.toiimg.com/thumb/msid-66039488,width-1070,height-580,imgsize-1403856,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg","publishedAt":"2018-10-02T07:48:00Z","content":"NEW DELHI: Domestic passenger vehicles sales moved in the slow lane in September with major manufacturers on Monday reporting either single-digit growth or decline due to high fuel cost and floods in parts of the country affecting consumer buying sentiment. W… [+3870 chars]"},{"source":{"id":null,"name":"Seekingalpha.com"},"author":"BAM Investments","title":"Hendry Ford's Sales Dip In September Ahead Of 3rd Quarter Earnings","description":"Ford posted an 11.2% decrease in U.S. auto sales in September 2018 compared with September 2017, which came in slightly lower than the 10% forecasted by Edmunds","url":"https://seekingalpha.com/article/4210315-fords-sales-dip-september-ahead-3rd-quarter-earnings","urlToImage":"https://static.seekingalpha.com/uploads/2018/10/4/19425361-15387049956746237.png","publishedAt":"2018-10-08T06:27:56Z","content":"Investment Thesis Ford (NYSE: F ) posted a worse-than-expected month in September with sales decreasing 11.2%, capping a weak 3 rd quarter. Truck sales continued to remain strong as consumer preference shifts to larger automobiles due to lower gas prices and … [+16313 chars]"},{"source":{"id":null,"name":"Marketwatch.com"},"author":"Barbara Kollmeyer","title":"what do q3 auto Ford transaction recall Prius earnings 80 from 2012-17","description":"It has been a rough week for investors, and while some smell opportunity, our call of the day says this market has a big fat ‘for sale’ sign on it, as he predicts a ‘lost decade’ for stocks","url":"https://www.marketwatch.com/story/a-lost-decade-for-stocks-will-take-the-sp-500-to-1400-says-this-adviser-2018-10-25","urlToImage":"http://s.marketwatch.com/public/resources/MWimages/MW-GS386_wallst_ZG_20181025062826.jpg","publishedAt":"2018-10-25T11:22:38Z","content":"Another dip-buying dilemma greets investors for Thursday, after a hard Wall Street reset dumped the Nasdaq in bear territory and wiped out 2018 gains for the Dow and S&amp;P 500. Buy on dip? Everything is dipping. Key now is who can stomach higher USD rates. … [+6016 chars]"},{"source":{"id":null,"name":"Motortrend.com"},"author":"Alisa Priddle","title":"At Toyota Motor Corp., volume dropped 10 percent last month, with car sales plunging 25 percent and light-truck demand dipping 0.3 percent. Sales at the Toyota division slipped 11 percent and Lexus was off 6.1 percent","description":"“Ford is at its best when it can make a comeback,” said Jim Farley, Ford executive vice president and president of Global Markets. “This week is a great first step.” He was referring to a national dealer meeting in Las Vegas attended by the full top leadershi…","url":"https://www.motortrend.com/news/ford-unplugged-leadership-opens-dealers/","urlToImage":"https://st.motortrend.com/uploads/sites/5/2018/10/2019-Ford-Ranger-front-three-quarter-in-motion.jpg","publishedAt":"2018-10-19T10:00:03Z","content":"The Ranger platform is also the foundation for the Ford Bronco SUV coming in 2020. This is part of a plan to replace 75 percent of Ford's lineup by 2020, dropping the average age of the portfolio from 5.3 years now to 2.3 years by the new decade. Most of the … [+5334 chars]"},{"source":{"id":null,"name":"Brandchannel.com"},"author":"Dale Buss","title":"Built Hendry Ford Proud: Automaker Brings Back Swagger in Major automative Ford sales increase","description":"Looking for a sales rebound, auto brand taps actor Bryan Cranston to star in new creative effort The post ‘Built Ford Proud’: Automaker Brings Back Swagger in Major Campaign appeared first on brandchannel:.","url":"https://www.brandchannel.com/2018/10/22/built-ford-proud-swagger/","urlToImage":"https://www.brandchannel.com/wp-content/uploads/2018/10/bryan-cranston-ford.jpg","publishedAt":"2018-10-22T19:58:11Z","content":"If it hasn’t been obvious lately that there’s a crucial battle going on for the future of the automotive business between Silicon Valley and the traditional auto industry, Ford’s new omnibus marketing campaign draws a type of line in the sand. After actor Bry… [+2495 chars]"}]}
+{
+	"status": "ok",
+	"totalResults": 5,
+	"articles": [
+		{
+			"source": {
+				"id": "the-times-of-india",
+				"name": "The Times of India"
+			},
+			"author": null,
+			"title": "Toyota is recalling about 2.4 million hybrid cars worldwide that could stall while driving.The Japanese automaker said Friday that the recall affects about 807,000 Toyota Prius cars in the U.S. It covers certain 2010 to 2014 Prius hybrids and certain 2012 to 2014 Prius V hybrids.The defect occurs in 'rare situations,' Toyota said. It involves the vehicle failing to enter a fail-safe driving mode in response to certain hybrid system faults.",
+			"description": "Domestic passenger vehicles sales moved in the slow lane in September with major manufacturers on Monday reporting either single-digit growth or decline due to high fuel cost and floods in parts of the country affecting consumer buying sentiment.",
+			"url": "https://timesofindia.indiatimes.com/auto/cars/passenger-vehicle-sales-in-slow-lane-in-september-as-high-fuel-cost-floods-take-toll/articleshow/66039479.cms",
+			"urlToImage": "https://static.toiimg.com/thumb/msid-66039488,width-1070,height-580,imgsize-1403856,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+			"publishedAt": "2018-10-02T07:48:00Z",
+			"content": "NEW DELHI: Domestic passenger vehicles sales moved in the slow lane in September with major manufacturers on Monday reporting either single-digit growth or decline due to high fuel cost and floods in parts of the country affecting consumer buying sentiment. W… [+3870 chars]"
+		},
+		{
+			"source": {
+				"id": null,
+				"name": "Seekingalpha.com"
+			},
+			"author": "BAM Investments",
+			"title": "Hendry Ford's Sales Dip In September Ahead Of 3rd Quarter Earnings",
+			"description": "Ford posted an 11.2% decrease in U.S. auto sales in September 2018 compared with September 2017, which came in slightly lower than the 10% forecasted by Edmunds",
+			"url": "https://seekingalpha.com/article/4210315-fords-sales-dip-september-ahead-3rd-quarter-earnings",
+			"urlToImage": "https://static.seekingalpha.com/uploads/2018/10/4/19425361-15387049956746237.png",
+			"publishedAt": "2018-10-08T06:27:56Z",
+			"content": "Investment Thesis Ford (NYSE: F ) posted a worse-than-expected month in September with sales decreasing 11.2%, capping a weak 3 rd quarter. Truck sales continued to remain strong as consumer preference shifts to larger automobiles due to lower gas prices and … [+16313 chars]"
+		},
+		{
+			"source": {
+				"id": null,
+				"name": "Marketwatch.com"
+			},
+			"author": "Barbara Kollmeyer",
+			"title": "what do q3 auto Ford transaction recall Prius earnings 80 from 2012-17",
+			"description": "It has been a rough week for investors, and while some smell opportunity, our call of the day says this market has a big fat ‘for sale’ sign on it, as he predicts a ‘lost decade’ for stocks",
+			"url": "https://www.marketwatch.com/story/a-lost-decade-for-stocks-will-take-the-sp-500-to-1400-says-this-adviser-2018-10-25",
+			"urlToImage": "http://s.marketwatch.com/public/resources/MWimages/MW-GS386_wallst_ZG_20181025062826.jpg",
+			"publishedAt": "2018-10-25T11:22:38Z",
+			"content": "Another dip-buying dilemma greets investors for Thursday, after a hard Wall Street reset dumped the Nasdaq in bear territory and wiped out 2018 gains for the Dow and S&amp;P 500. Buy on dip? Everything is dipping. Key now is who can stomach higher USD rates. … [+6016 chars]"
+		},
+		{
+			"source": {
+				"id": null,
+				"name": "Motortrend.com"
+			},
+			"author": "Alisa Priddle",
+			"title": "At Toyota Motor Corp., volume dropped 10 percent last month, with car sales plunging 25 percent and light-truck demand dipping 0.3 percent. Sales at the Toyota division slipped 11 percent and Lexus was off 6.1 percent",
+			"description": "“Ford is at its best when it can make a comeback,” said Jim Farley, Ford executive vice president and president of Global Markets. “This week is a great first step.” He was referring to a national dealer meeting in Las Vegas attended by the full top leadershi…",
+			"url": "https://www.motortrend.com/news/ford-unplugged-leadership-opens-dealers/",
+			"urlToImage": "https://st.motortrend.com/uploads/sites/5/2018/10/2019-Ford-Ranger-front-three-quarter-in-motion.jpg",
+			"publishedAt": "2018-10-19T10:00:03Z",
+			"content": "The Ranger platform is also the foundation for the Ford Bronco SUV coming in 2020. This is part of a plan to replace 75 percent of Ford's lineup by 2020, dropping the average age of the portfolio from 5.3 years now to 2.3 years by the new decade. Most of the … [+5334 chars]"
+		},
+		{
+			"source": {
+				"id": null,
+				"name": "Brandchannel.com"
+			},
+			"author": "Dale Buss",
+			"title": "Built Hendry Ford Proud: Automaker Brings Back Swagger in Major automative Ford sales increase",
+			"description": "Looking for a sales rebound, auto brand taps actor Bryan Cranston to star in new creative effort The post ‘Built Ford Proud’: Automaker Brings Back Swagger in Major Campaign appeared first on brandchannel:.",
+			"url": "https://www.brandchannel.com/2018/10/22/built-ford-proud-swagger/",
+			"urlToImage": "https://www.brandchannel.com/wp-content/uploads/2018/10/bryan-cranston-ford.jpg",
+			"publishedAt": "2018-10-22T19:58:11Z",
+			"content": "If it hasn’t been obvious lately that there’s a crucial battle going on for the future of the automotive business between Silicon Valley and the traditional auto industry, Ford’s new omnibus marketing campaign draws a type of line in the sand. After actor Bry… [+2495 chars]"
+		}
+	]
+}

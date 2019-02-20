@@ -11,7 +11,10 @@ public class TfIdfService {
 	       if (term.equalsIgnoreCase(word))
 	              result++;
 	       }
-	    return result / doc.size();
+	    
+	    double tfRes = result / doc.size();
+	    System.out.println("<tfRes>" + tfRes);
+	    return tfRes;
 	}
 	
 	
@@ -25,7 +28,10 @@ public class TfIdfService {
 	            }
 	        }
 	    }
-	    return Math.log(docs.size() / n);
+	    
+	    double idfRes = Math.log(docs.size() / n);
+	    System.out.println("<idfRes>" + idfRes);
+	    return idfRes;
 	}
 	
 	

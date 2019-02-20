@@ -15,7 +15,9 @@ public class CrawlControllerLocal {
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		String crawlStorageFolder = "/Users/HardikBharat/eclipse-workspacefinal/NLPProject/misc";
+		
+		// /Users/HardikBharat/Desktop/myeclipseworkspace/RMEnablement/misc
+		String crawlStorageFolder = "/Users/HardikBharat/Desktop/myeclipseworkspace/RMEnablement/misc";
         int numberOfCrawlers = 100;
 
         CrawlConfig config = new CrawlConfig();
@@ -45,7 +47,7 @@ public class CrawlControllerLocal {
          * will reach the line after this only when crawling is finished.
          */
         controller.start(MyCrawler.class, numberOfCrawlers);
-        FileWriter writer  = new FileWriter("/Users/HardikBharat/eclipse-workspacefinal/NLPProject/misc/samplener.json/text.log");
+        FileWriter writer  = new FileWriter("/Users/HardikBharat/Desktop/myeclipseworkspace/RMEnablement/misc/samplener.json/text.log");
         writer.write(MyCrawler.sb.toString());
 	}
 

@@ -46,7 +46,7 @@ public class TopicController {
 		// Pipes: lowercase, tokenize, remove stopwords, map to features
 		pipeList.add(new CharSequenceLowercase());
 		pipeList.add(new CharSequence2TokenSequence(Pattern.compile("\\p{L}[\\p{L}\\p{P}]+\\p{L}")));
-		pipeList.add(new TokenSequenceRemoveStopwords(new File("/Users/HardikBharat/eclipse-workspacefinal/NLPProject/misc/TopicStopList.txt"), "UTF-8", false, false,
+		pipeList.add(new TokenSequenceRemoveStopwords(new File("/Users/HardikBharat/Desktop/myeclipseworkspace/RMEnablement/misc/TopicStopList.txt"), "UTF-8", false, false,
 				false));
 		pipeList.add(new TokenSequence2FeatureSequence());
 
@@ -166,7 +166,7 @@ public class TopicController {
 			// Pipes: lowercase, tokenize, remove stopwords, map to features
 			pipeList.add(new CharSequenceLowercase());
 			pipeList.add(new CharSequence2TokenSequence(Pattern.compile("\\p{L}[\\p{L}\\p{P}]+\\p{L}")));
-			pipeList.add(new TokenSequenceRemoveStopwords(new File("/Users/HardikBharat/eclipse-workspacefinal/NLPProject/misc/TopicStopList.txt"), "UTF-8", false, false,
+			pipeList.add(new TokenSequenceRemoveStopwords(new File("/Users/HardikBharat/Desktop/myeclipseworkspace/RMEnablement/misc/TopicStopList.txt"), "UTF-8", false, false,
 					false));
 			pipeList.add(new TokenSequence2FeatureSequence());
 
@@ -235,14 +235,21 @@ public class TopicController {
 				// out.format("%d\t%.3f\t", topic, topicDistribution[topic]);
 				sTopic.setWaitage(topicDistribution[topic]);
 				int rank = 0;
-				while (iterator.hasNext() && rank < numKeywords) {
+				/*while (iterator.hasNext() && rank < numKeywords) {
 					IDSorter idCountPair = iterator.next();
 					out.format("%s, ", dataAlphabet.lookupObject(idCountPair.getID()));
 					rank++;
 					// sb1.append("##"+dataAlphabet.lookupObject(idCountPair.getID()));
 					// sb.add((String)dataAlphabet.lookupObject(idCountPair.getID()));
+				}*/
+				StringBuilder topicZeroText = new StringBuilder();
+				
+				while (iterator.hasNext() && rank < numKeywords) {
+					IDSorter idCountPair = iterator.next();
+					topicZeroText.append(dataAlphabet.lookupObject(idCountPair.getID()) + " ");
+					rank++;
 				}
-				String str = out.toString();
+				String str = topicZeroText.toString();
 				if (str != null && str.length() > 3) {
 					str = str.substring(0, str.length() - 2);
 					System.out.println(str);
@@ -253,14 +260,14 @@ public class TopicController {
 			}
 			// System.out.println("Hello"+sb.toString());
 			// Create a new instance with high probability of topic 0
-			StringBuilder topicZeroText = new StringBuilder();
+			/*StringBuilder topicZeroText = new StringBuilder();
 			Iterator<IDSorter> iterator = topicSortedWords.get(0).iterator();
 			int rank = 0;
 			while (iterator.hasNext() && rank < numKeywords) {
 				IDSorter idCountPair = iterator.next();
 				topicZeroText.append(dataAlphabet.lookupObject(idCountPair.getID()) + " ");
 				rank++;
-			}
+			}*/
 /*
 			// Create a new instance named "test instance" with empty target and
 			// source fields.
@@ -272,22 +279,19 @@ public class TopicController {
 			System.out.println("0\t" + testProbabilities[0]);
 			System.out.println(st);*/
 			
-			TfIdfService service = new TfIdfService();
-			List<String> docsList = new ArrayList<>();
-			List<List<String>> docsListCollection = new ArrayList<>();
-			for (TopicCompare tc : st) {
-				docsList.add(tc.getTopicString());
-			}
-			for (String doc : docsList) {
-				String[] keywords = doc.split(" ");
+			
+			//for (String doc : docsList) {
+				/*String[] keywords = doc.split(" ");
 				List<String> docs = Arrays.asList(keywords);
 				docsListCollection.add(docs);
 				for (String term : keywords) {
 					double wietage = service.tfIdf(docs,docsListCollection , term);
 					System.out.println(" Wietage for the Term " + term  + "-" + wietage);
-				}
+				}*/
 				
-			}
+				
+				
+			//}
 			
 			
 			return st;
@@ -308,7 +312,7 @@ public class TopicController {
 		// Pipes: lowercase, tokenize, remove stopwords, map to features
 		pipeList.add(new CharSequenceLowercase());
 		pipeList.add(new CharSequence2TokenSequence(Pattern.compile("\\p{L}[\\p{L}\\p{P}]+\\p{L}")));
-		pipeList.add(new TokenSequenceRemoveStopwords(new File("/Users/HardikBharat/eclipse-workspacefinal/NLPProject/misc/TopicStopList.txt"), "UTF-8", false, false,
+		pipeList.add(new TokenSequenceRemoveStopwords(new File("/Users/HardikBharat/Desktop/myeclipseworkspace/RMEnablement/misc/TopicStopList.txt"), "UTF-8", false, false,
 				false));
 		pipeList.add(new TokenSequence2FeatureSequence());
 

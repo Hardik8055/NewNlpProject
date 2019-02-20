@@ -70,7 +70,7 @@ public class SolrUpdateController {
 		 //HttpSolrClient client = new HttpSolrClient.Builder("http://172.16.244.233:8983/solr/nutch").build(); // WIFI
 		 //HttpSolrClient client = new HttpSolrClient.Builder("http://172.16.244.233:8983/solr/update/json").build(); // WIFI
 		 //HttpSolrClient client = new HttpSolrClient.Builder("http://172.16.244.225:8983/solr/nutch").build(); - DELL NETWORK
-		 HttpSolrClient client = new HttpSolrClient.Builder("http://localhost:8983/solr/tollywood"
+		 HttpSolrClient client = new HttpSolrClient.Builder("http://localhost:8983/solr/pulwama"
 		 		+ "").build(); // Hotspot IP
 		 		 
 		 //	Search through newsAPI
@@ -115,9 +115,7 @@ public class SolrUpdateController {
 		 
 		 //System.out.println("searchResult-->"+searchResult);
 		 //System.out.println("searchResult length-->"+searchResult.length());
-		 
-		 
-		 
+		
 		 System.out.println("Update complete");
 		 return new ResponseEntity<List<SolrDocument>>(HttpStatus.OK);
 	 }

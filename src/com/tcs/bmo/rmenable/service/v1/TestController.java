@@ -54,14 +54,14 @@ public class TestController {
 		        // Pipes: lowercase, tokenize, remove stopwords, map to features
 		        pipeList.add( new CharSequenceLowercase() );
 		        pipeList.add( new CharSequence2TokenSequence(Pattern.compile("\\p{L}[\\p{L}\\p{P}]+\\p{L}")) );
-		        pipeList.add( new TokenSequenceRemoveStopwords(new File("/Users/HardikBharat/eclipse-workspacefinal/NLPProject/misc/TopicStopList.txt"), "UTF-8", false, false, false) );
+		        pipeList.add( new TokenSequenceRemoveStopwords(new File("/Users/HardikBharat/Desktop/myeclipseworkspace/RMEnablement/misc/TopicStopList.txt"), "UTF-8", false, false, false) );
 		        pipeList.add( new TokenSequence2FeatureSequence() );
 
 		        InstanceList instances = new InstanceList (new SerialPipes(pipeList));
 		        /*Reader fileReader = new InputStreamReader(new FileInputStream(
 		        		new File(TopicController.class.getResourceAsStream("config/sample.json"))), "UTF-8");
 		      */  
-		      Reader fileReader=new FileReader("/Users/HardikBharat/eclipse-workspacefinal/NLPProject/misc/TopicInput.txt");
+		      Reader fileReader=new FileReader("/Users/HardikBharat/Desktop/myeclipseworkspace/RMEnablement/misc/TopicInput.txt");
 		    //   Reader fileReader=new FileReader(filename);
 		        instances.addThruPipe(new CsvIterator (fileReader, Pattern.compile("^(\\S*)[\\s,]*(\\S*)[\\s,]*(.*)$"),
 		                                               3, 2, 1)); // data, label, name fields

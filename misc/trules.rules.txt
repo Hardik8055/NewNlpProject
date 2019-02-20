@@ -1,0 +1,38 @@
+# make all patterns case-sensitive
+# ENV.defaultStringMatchFlags = 0
+# ENV.defaultStringPatternFlags = 0
+# 1888 673 0385 286370
+
+ner = { type: "CLASS", value: "edu.stanford.nlp.ling.CoreAnnotations$NamedEntityTagAnnotation" }
+tokens = { type: "CLASS", value: "edu.stanford.nlp.ling.CoreAnnotations$TokensAnnotation" }
+
+$LEVEL1="/Toyota|Cheverlot|Buick|GMC|Cadillac|Ford/"
+$LEVEL2="/Sales|Electric Car|Autonomous|recall|open recall|urgent recall|bankruptcy|litigation|sales/"
+$LEVEL22="/Recall|recall|open recall|urgent recall|bankruptcy|litigation|recalling|Recalling/"
+$LEVEL3="/Dip|decrease|down|decline|increase|up|rise|drop/"
+$LEVEL33="/Prius|light-truck/"
+$REGION="/USA|United States/"
+
+
+ENV.defaults["stage"] = 1
+# { ruleType: "tokens", pattern: ([{word:$LEVEL1}]+), action: Annotate($0, ner, "LEVEL1COMPANY")}
+ { ruleType: "tokens", pattern: ([{ner:"ORGANIZATION"} & {word:$LEVEL1}]+), action: Annotate($0, ner, "LEVEL1COMPANY")}
+ENV.defaults["stage"] = 2
+{ ruleType: "tokens", pattern: ([{word:$LEVEL2}]+), action: Annotate($0, ner, "LEVEL2DES")}
+ENV.defaults["stage"] = 3
+{ ruleType: "tokens", pattern: ([{word:$LEVEL3}]+), action: Annotate($0, ner, "LEVEL3DES")}
+ENV.defaults["stage"] = 4
+{ruleType: "tokens", pattern: (([{word:$LEVEL22}]+)), action: Annotate($0, ner, "LEVEL2REC")}
+ENV.defaults["stage"] = 5
+{ruleType: "tokens", pattern: (([{word:$LEVEL33}]+)), action: Annotate($0, ner, "LEVEL3REC")}
+# { ruleType: "tokens", pattern: ([{ner: "LEVEL1COMPANY"}] [{ner: "LEVEL2DES"}]), action: Annotate($0, ner, "LEVEL1AND2")}
+ENV.defaults["stage"] = 6
+ { ruleType: "tokens", pattern: ([{ner:"NUMBER"}] [{word:/million|lakhs/}]), action: Annotate($0, ner, "O")}
+ENV.defaults["stage"] = 7
+ { ruleType: "tokens", pattern: ([{ner:"LEVEL2DES"}] [{word:/plunging|falling|raising|increasing|decreasing/}]), action: Annotate($0, ner, "LEVEL12DEC")}
+ENV.defaults["stage"] = 8
+ { ruleType: "tokens", pattern: ([{ner:"LEVEL3REC"}] [{word:"demand"}] [{word:/dipping|drops/}]), action: Annotate($0, ner, "LEVEL13DEC")}
+# { ruleType: "tokens", pattern: ([{ner: LEVEL33}  | {ner: LEVEL2REC} | {ner: LEVEL3REC}] ), action: (Annotate($0, ner, "RULE_FOUND_PERSON") ),
+ # result: Concat("(",  $$0.text, "recalls", "about 34343", LEVEL3REC, ")") }
+
+

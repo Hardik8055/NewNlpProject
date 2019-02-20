@@ -439,7 +439,7 @@ public class NLPHelper {
 			StringBuilder titleUpdated) throws ClassNotFoundException, Exception, IOException, ParseException {
 		Gson gson = new Gson();
 		List<Impact> impactList = null;
-		ImpactList impactJSON = gson.fromJson(new FileReader("/Users/HardikBharat/eclipse-workspacefinal/NLPProject/misc/impact.json"), ImpactList.class);
+		ImpactList impactJSON = gson.fromJson(new FileReader("/Users/HardikBharat/Desktop/myeclipseworkspace/RMEnablement/misc/impact.json"), ImpactList.class);
 		impactList = impactJSON.getImpacts();
 		for (Impact impact : impactList) {
 			if (brand.equalsIgnoreCase(impact.getBrand()) && model.equalsIgnoreCase(impact.getModel())

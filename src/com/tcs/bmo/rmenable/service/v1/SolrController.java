@@ -52,10 +52,11 @@ public class SolrController {
 	@Autowired
 	SolrUpdateController solrU;
 
-	IndEntity ent = new IndEntity();
+	@Autowired
+	IndEntity ent;
 
 	@RequestMapping(value = "/news", method = RequestMethod.GET)
-	public ResponseEntity<SolrResult> displayQueryDetails(@RequestParam String queryDetails, @RequestParam String row)
+	public ResponseEntity<SolrResult> displayQueryDetails(@RequestParam("queryDetails") String queryDetails, @RequestParam("row") String row)
 			throws ClassNotFoundException, ParseException, Exception {
 		// ModelAndView model = new ModelAndView();
 
@@ -120,13 +121,13 @@ public class SolrController {
 
 	public List<Article> displayTopicDetails(String queryDetails, String row, String filename, int numTopic,
 			String entity) throws ClassNotFoundException, ParseException, Exception {
-		IndEntity ie = new IndEntity();
+		ent.config();
 		SolrDocumentList resultCrawl = getSolrDocument(entity + "news", queryDetails, row);
-		String ent = "";
-		if (ie.getEntity() != null) {
-			ent = ie.getEntity().get(entity);
+		String strEntity = "";
+		if (ent.getEntity() != null) {
+			strEntity = ent.getEntity().get(entity);
 		} else {
-			ent = entity;
+			strEntity = entity;
 		}
 		SolrDocumentList results = getSolrDocument(entity, "content:*" + ent + "*", row);
 
@@ -213,7 +214,7 @@ public class SolrController {
 	public ResponseEntity<List<SearchTopic>> displayTopicsUsingTfIdf(@RequestParam String row)
 			throws ClassNotFoundException, ParseException, Exception {
 		List<SearchTopic> topicText = new ArrayList<>();
-
+		ent.config();
 		for (String en : ent.getEntity().keySet()) {
 			SearchTopic st = new SearchTopic();
 			String queryDetails = "*:*";
@@ -226,9 +227,13 @@ public class SolrController {
 
 			}
 			StringBuilder sb = new StringBuilder();
+			List<String> docsList = new ArrayList<>();
+			List<List<String>> docsListCollection = new ArrayList<>();
 			for (SolrDocument doc : listSolrDocument) {
 				sb.append(doc.getFieldValue("content"));
 				sb.append("/n");
+				docsList = Arrays.asList(doc.getFieldValue("content").toString().split(" "));
+				docsListCollection.add(docsList);
 			}
 			FileWriter writer = new FileWriter("../desc.txt");
 			writer.write(sb.toString());
@@ -240,6 +245,19 @@ public class SolrController {
 					.collect(Collectors.toList()));
 			st.setSelectedTopic(new ArrayList<>()); // what supposed to be pass here, for now its empty
 			topicText.add(st);
+			TfIdfService service = new TfIdfService();
+
+			for (String tc : st.getTopicList()) {
+				//docsList.add(tc.getTopicString());
+					
+			}
+			for (String tc : st.getTopicList()) {
+				docsList = Arrays.asList(tc.split(" "));
+				for (String term : docsList) {
+					double wietage = service.tfIdf(docsList,docsListCollection , term);
+					System.out.println(" weightage  for the Term " + term  + ":" + wietage);
+				}
+			}
 
 		}
 		return new ResponseEntity<List<SearchTopic>>(topicText, HttpStatus.OK);
@@ -263,6 +281,7 @@ public class SolrController {
 	public ResponseEntity<List<NewsWithTopic>> displayTopicsWithNews(@RequestParam String row)
 			throws ClassNotFoundException, ParseException, Exception {
 		List<NewsWithTopic> topicNews=new ArrayList<>();
+		ent.config();
 		for (String en : ent.getEntity().keySet()) {
 			SearchTopic st = new SearchTopic();
 			
