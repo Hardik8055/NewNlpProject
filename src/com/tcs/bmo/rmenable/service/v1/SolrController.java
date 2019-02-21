@@ -248,16 +248,13 @@ public class SolrController {
 			TfIdfService service = new TfIdfService();
 
 			for (String tc : st.getTopicList()) {
-				//docsList.add(tc.getTopicString());
-					
-			}
-			for (String tc : st.getTopicList()) {
 				docsList = Arrays.asList(tc.split(" "));
 				for (String term : docsList) {
 					double wietage = service.tfIdf(docsList,docsListCollection , term);
 					System.out.println(" weightage  for the Term " + term  + ":" + wietage);
 				}
 			}
+			
 
 		}
 		return new ResponseEntity<List<SearchTopic>>(topicText, HttpStatus.OK);

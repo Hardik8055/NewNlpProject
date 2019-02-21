@@ -300,6 +300,7 @@ public class TopicController {
 
 	public List<NewsWithTopic> processTopicWithNews(String filename, String entityName, String entity) throws Exception {
 
+		solr.entity = entity;
 		// Begin by importing documents from text to feature sequences
 		ArrayList<Pipe> pipeList = new ArrayList<Pipe>();
 		 /*IndEntity ie=new IndEntity();
@@ -398,7 +399,7 @@ public class TopicController {
 			if (str != null) {
 				//str="industry training network event leading ";
 				TreeMap<Double, Article> hArticle = update_hArticles(instances, model, noIteration,
-						client, str, noKeywords);
+						client, str, noKeywords,entity);
 				System.out.println(hArticle.size());
 				
 				//if(hArticle.size()>=3){
@@ -428,7 +429,7 @@ public class TopicController {
 	}
 
 	private TreeMap<Double, Article> update_hArticles(InstanceList instances,
-			ParallelTopicModel model, int noIteration, HttpSolrClient client, String str, int key_words_count) throws UnirestException, Exception {
+			ParallelTopicModel model, int noIteration, HttpSolrClient client, String str, int key_words_count, String entity) throws UnirestException, Exception {
 		GoogleClient googleClient = new GoogleClient();
 		googleClient = solr.updateTopicContentWithNews(str+"US");
 		TreeMap<Double, Article> hArticle=new TreeMap<Double, Article>(Collections.reverseOrder());
@@ -441,6 +442,7 @@ public class TopicController {
 						json = ow.writeValueAsString(article);
 						JsonObject jsonContent = solr.getJsonContent(json);
 						//System.out.println(json);
+						
 						solr.updateContent(client,jsonContent);
 					} catch (Exception e) {
 						// TODO Auto-generated catch block
@@ -465,7 +467,7 @@ public class TopicController {
 				for (int i=0;i<key_words_count;i++) {
 					sb.append(strArray[i]).append(" ");
 				}
-				update_hArticles(instances, model, noIteration, client, sb.toString().trim(), key_words_count);
+				update_hArticles(instances, model, noIteration, client, sb.toString().trim(), key_words_count, entity);
 			}
 		}
 		return hArticle;

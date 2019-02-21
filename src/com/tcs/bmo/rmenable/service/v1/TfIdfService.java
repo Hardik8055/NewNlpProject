@@ -13,7 +13,6 @@ public class TfIdfService {
 	       }
 	    
 	    double tfRes = result / doc.size();
-	    System.out.println("<tfRes>" + tfRes);
 	    return tfRes;
 	}
 	
@@ -30,7 +29,6 @@ public class TfIdfService {
 	    }
 	    
 	    double idfRes = Math.log(docs.size() / n);
-	    System.out.println("<idfRes>" + idfRes);
 	    return idfRes;
 	}
 	

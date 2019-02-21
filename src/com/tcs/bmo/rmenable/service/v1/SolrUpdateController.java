@@ -60,6 +60,8 @@ public class SolrUpdateController {
 	@Autowired
 	SolrController solr;
 	
+	public String entity;
+	
 	private final ObjectMapper mapper = new ObjectMapper();
 	Properties prop = new Properties();
 	InputStream inStream; 
@@ -70,8 +72,7 @@ public class SolrUpdateController {
 		 //HttpSolrClient client = new HttpSolrClient.Builder("http://172.16.244.233:8983/solr/nutch").build(); // WIFI
 		 //HttpSolrClient client = new HttpSolrClient.Builder("http://172.16.244.233:8983/solr/update/json").build(); // WIFI
 		 //HttpSolrClient client = new HttpSolrClient.Builder("http://172.16.244.225:8983/solr/nutch").build(); - DELL NETWORK
-		 HttpSolrClient client = new HttpSolrClient.Builder("http://localhost:8983/solr/pulwama"
-		 		+ "").build(); // Hotspot IP
+		 HttpSolrClient client = new HttpSolrClient.Builder("http://localhost:8983/solr/"+this.entity).build(); // Hotspot IP
 		 		 
 		 //	Search through newsAPI
 		 loadSolrConfiguration();
